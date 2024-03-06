@@ -181,6 +181,7 @@ header {
   height: 133px;
   position: absolute;
   top: -10%;
+  left: 40%;
   z-index: -1;
 }
 
@@ -193,7 +194,7 @@ header {
   height: 133px;
   position: absolute;
   bottom: 2%;
-  left: 25%;
+  left: 18%;
   z-index: -1;
 }
 
@@ -453,11 +454,13 @@ header {
   width: 40%;
   position: relative;
 }
-
+.bg-person {
+  position: relative;
+}
 .bg-person::before {
   content: "";
   position: absolute;
-  bottom: 2800px;
+  bottom: 0;
   right: 0%;
   background-image: url(images/BGicon_Green.png);
   background-size: 100%;
@@ -524,6 +527,7 @@ header {
 .course-content {
   background-color: #F0F5E1;
   overflow: hidden;
+ z-index: 3
 }
 
 
@@ -576,19 +580,23 @@ header {
   color: #E7EDD4;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 120px;
-  z-index: -1;
+  z-index: -2;
 }
 
-.course-price::before {
+.bg-person2 {
+  position: relative;
+}
+
+.bg-person2::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 100px;
   right: 0;
   background-image: url(images/BG_course.png);
   background-size: 100%;
   background-repeat: no-repeat;
   display: block;
-  z-index: -1;
+  z-index: 1;
   width: 440px;
   height: 336px;
   overflow: hidden;
@@ -905,6 +913,7 @@ iframe {
   .footer-left,
   .footer-right {
     flex: 1;
+    width: 100%;
   }
 
   .footer-hour {
@@ -998,28 +1007,28 @@ iframe {
   }
 
   /* ナビゲーションのリンクの装飾設定SP */
-  #nav-sp>a {
+  #nav-sp a {
     display: block;
   }
 
-  #nav-sp>a:link {
+  #nav-sp a:link {
     color: #0D0D0D;
   }
 
-  #nav-sp>a:visited {
+  #nav-sp a:visited {
     color: #0D0D0D;
   }
 
-  #nav-sp>a:hover {
+  #nav-sp a:hover {
     color: #0D0D0D;
     text-decoration: underline;
   }
 
-  #nav-sp>a:active {
+  #nav-sp a:active {
     color: #0D0D0D;
   }
 
-  #nav-sp>.menu {
+  .menu {
     text-decoration: none;
     display: block;
     margin: 0 30px 0 30px;
@@ -1038,7 +1047,7 @@ iframe {
     border-radius: 4px;
     font-size: 14px;
     padding: 10px 50px;
-    color: #ffffff;
+    color: #ffffff !important;
     display: inline-block;
   }
 
