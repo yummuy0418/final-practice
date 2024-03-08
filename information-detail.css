@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.post-with-photo {
+  flex-direction: column;
+}
+
+.post-title {
+  width: 100%;
+}
+
+.post-title p {
+  color: 0C4324;
+}
+.post-date {
+  width: 100%;
+}
+.post-photo {
+  width: 100%;
+}
+
+.page {
+  text-align: center;
+  padding-top: 30px;
+}
+.page a {
+  padding: 15px;
+}
+
+.post-detail h2,
+.post-detail h3,
+.post-detail h4 {
+  color: 0C4324;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  
+}

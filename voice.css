@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.customer {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 100px;
+}
+
+.customer-item {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.title-coment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.number {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .customer {
+ padding: 20px;
+  }
+  .customer-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
+ 
+
+  .title-coment {
+    align-items: center;
+  }
+  
+}
+
+
