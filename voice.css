@@ -22,6 +22,13 @@
 .number {
   text-align: center;
 }
+.number .active {
+  background-color: #468459;
+  color: #ffffff;
+}
+.number p {
+  display: inline;
+}
 
 @media screen and (max-width: 767px) {
   .customer {

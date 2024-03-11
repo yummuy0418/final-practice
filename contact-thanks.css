@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.main-message {
+  left: 3%;
+}
+@media screen and (max-width: 1024px) {
+  .main-message h1 {
+    font-size: 16px
+  }
+}
+@media screen and (max-width: 900px){
+  .main-message h1 {
+    font-size: 15px;
+  }
+}
+
+.border {
+  border: solid 1px #cccccc;
+  width: 80%;
+  height: 264px;
+  padding-top: 50px;
+  margin: 50px auto;
+}
+
+.border p {
+  text-align: center;
+}
+.border .submit {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.border .thanks {
+  font-size: 16px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.border .button a{
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #1B9240;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  padding: 1em 1em;
+  border-radius: 4px;
+}
+
+
+

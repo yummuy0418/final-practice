@@ -1,4 +1,13 @@
 @charset "UTF-8";
+.main-message {
+  left: 3%;
+}
+@media screen and (max-width: 1024px) {
+  .main-message p {
+    font-size: 28px
+  }
+}
+
 .post-with-photo {
   flex-direction: column;
 }
@@ -7,8 +16,8 @@
   width: 100%;
 }
 
-.post-title p {
-  color: 0C4324;
+.post-title h2 {
+  color: #0C4324;
 }
 .post-date {
   width: 100%;
@@ -17,22 +26,44 @@
   width: 100%;
 }
 
+
+.post-detail h2 {
+  color: #0C4324;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.post-detail h3 {
+  color: #0C4324;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.post-detail h2,
+.post-detail h3,
+.post-detail h4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.post-detail p{
+  font-size: 16px;
+}
+
 .page {
   text-align: center;
   padding-top: 30px;
 }
 .page a {
   padding: 15px;
+  font-size: 18px;
 }
 
-.post-detail h2,
-.post-detail h3,
-.post-detail h4 {
-  color: 0C4324;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-@media screen and (max-width: 767px) {
-  
+@media screen and (max-width: 1024px) {
+  .post-container {
+    padding: 0 20px;
+  }
+  .post-left {
+    width: 100%;
+  }
 }

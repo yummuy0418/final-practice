@@ -7,17 +7,13 @@ a {
   display: none;
 }
 
-
-
-
-/* コンセプト */
-.concept,
+/* flow */
 .flow {
+  width: min(100%, 1200px);
   overflow: hidden;
   padding-top: 70px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   position: relative;
-  width: 100%;
   
 }
 
@@ -25,142 +21,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 90px;
+  gap: 10px;
 }
 
-.common-icon-title {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-}
-
-.common-icon-title img {
-  width: 22px;
-  height: 20px;
-}
-
-.common-icon-title p {
-  font-size: 24px;
-  color: #468459;
-}
-
-.common-title-under {
-  color: #468459;
-}
-
-.common-left::before {
-  position: absolute;
-  top: 10%;
-  left: -30%;
-  content: 'Concept';
-  color: #DAE2C2;
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 120px;
-  z-index: -1;
-}
-
-.concept-catch {
-  color: #468459;
-  line-height: 1.8;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 32px;
-  z-index: 1;
-}
-
-
-.concept-explain {
-  font-size: 16px;
-  margin-bottom: 30px;
-  line-height: 1.5;
-}
-
-.concept-btn {
-  border: solid 1px #000000;
-  border-radius: 6px;
-  font-size: 14px;
-  padding: 3px 23px;
-  margin-left: auto;
-  width: 150px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  color: #000000;
-}
-
-.common-right {
-  width: 40%;
+.flow-left{
+  width: 38%;
   position: relative;
-}
-
-.concept::before {
-  content: "";
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
-  background-image: url(images/BGicon_Green.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  display: block;
-  z-index: -1;
-  width: 440px;
-  height: 336px;
-  overflow: hidden;
-}
-
-.common-right img,
-.flow-right img {
-  width: 150%;
-}
-
-@media screen and (max-width: 767px) {
-  .concept {
-    padding-top: 0;
-    
-  }
-
-  .common-flex {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .concept-btn {
-    margin: 0 auto;
-  }
-
-  .concept::before {
-    top: 42%;
-    left: 2%;
-    font-size: 100px;
-  }
-
-  .concept::after {
-    top: 77%;
-    left: 45%;
-  }     
-
-  .common-right {
-    padding-top: 70px;
-    width: 90%;
-  }
-
-  .concept-catch br {
-    display: none;
-  }
-
-  .common-left::before {
-    top: -7%;
-    left:-10%;
-    font-size: 90px;
-  }
-
-  .common-right::before {
-    top: auto;
-    bottom: 0;
-    left: 50%;
-    background-size: 75%;
-  }
-
 }
 
 .flow-left::before {
@@ -179,17 +45,63 @@ a {
   line-height: 3;
 }
 
+.flow-right {
+  width: 35%;
+  position: relative;
+}
+
+.flow-right img {
+  width: 150%;
+}
+
 @media screen and (max-width: 767px) {
-.flow {
-  padding-top: 20px;
-}
+  .flow {
+    padding-top: 0;
+    
+  }
 
-.flow-left {
-  align-items: flex-start;
-}
+  .flow-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-.flow-left::before {
-  top: 30%;
+  .flow-right {
+    padding-top: 70px;
+    width: 90%;
+  }
+
+  .flow-left {
+    width: 100%;
+    padding: 30px;
+  }
+  .flow-left::before {
+    top: -7%;
+    left:0;
+    font-size: 90px;
+  }
+  .concept::before {
+    top: 42%;
+    left: 2%;
+    font-size: 100px;
+  }
+
+  .bg-person::before {
+    bottom: -30px;
+    right: -35%;
+    background-size: 70%;
+  }
+
+  .flow-left::before {
+    top: 20%;
+  }
+
+
+
+@media screen and (max-width: 767px) {
+
+
+
+
 }
   
 }

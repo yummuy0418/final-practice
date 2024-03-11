@@ -1,1 +1,93 @@
 @charset "UTF-8";
+.main-message {
+  left: 3%;
+}
+@media screen and (max-width: 1024px) {
+  .main-message h1 {
+    font-size: 16px
+  }
+}
+@media screen and (max-width: 900px){
+  .main-message h1 {
+    font-size: 15px;
+  }
+}
+
+.contact-container {
+  padding: 40px 100px;
+}
+
+.contact-tel p{
+  color: #0C4324;
+  padding-top: 30px;
+  font-size: 24px;
+}
+
+.contact-tel .adress {
+  color: #000000;
+  font-size: 16px;
+}
+
+.tel span {
+  color: #000000;
+  font-size: 14px;
+  padding-right: 3px;
+}
+
+.contact-form {
+  padding-top: 30px;
+ 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item {
+  padding-bottom: 50px;
+}
+
+.contact-form-title{
+  color: #0C4324;
+  font-size: 24px;
+  padding-bottom: 23px;
+ }
+.contact-form-remark {
+  font-size: 18px;
+  padding-bottom: 25px;
+}
+
+.contact-form label {
+  padding-bottom: 15px;
+  font-size: 16px;
+  display: block;
+}
+
+::placeholder {
+  font-size: 16px;
+}
+
+.blank {
+  width: 80%;
+}
+
+.submit{
+  background-color: #1B9240;
+  color: #ffffff;
+  width: 240px;
+  height: 48px;
+  border-radius: 4px;
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-container {
+    padding: 15px 20px;
+  }
+
+  .blank {
+    width: 100%;
+  }
+  
+}
