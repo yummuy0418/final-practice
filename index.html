@@ -36,11 +36,7 @@
       <a class="reservation" href="contact.html">ご予約・お問合せ</a>
     </nav>
 
-
     <img class="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く">
-
-
-
     <div class="nav-sp">
       <img class="close" src="images/button-close.png" alt="ナビゲーションを閉じる">
       <nav>
@@ -60,19 +56,46 @@
 
   </header>
 
+  
   <!-- ヘッダー下メッセージとヒーローイメージ -->
   <div class="top-main-vidual">
     <!-- 縦書きメッセージ -->
+   
     <h1 class="top-main-message"><span>根本的な症状改善を<br>サポートします</span></h1>
+
     <!-- ヒーローイメージ -->
-    <div class="top-main-vidual-img">
-      <img src="images/hero1.png" alt="院内写真">
-    </div>
+    <ul class="slider">
+      <li class="top-main-vidual-img">
+        <img src="images/hero1.png" alt="院内写真">
+      </li>
+      <li class="top-main-vidual-img">
+        <img src="images/hero2.png" alt="院内写真">
+      </li>
+      <li class="top-main-vidual-img">
+        <img src="images/hero3.png" alt="院内写真">
+      </li>
+      <li class="top-main-vidual">
+        <img src="images/hero4.png" alt="院内写真">
+      </li>
+    </ul>
+   
     
     <!-- スマホ用ヒーローイメージ -->
-    <div class="top-main-vidual-sp-img">
-      <img src="images/hero-sp1.png" alt="院内写真">
-    </div>
+    <ul class="slider-sp">
+      <li class="top-main-vidual-img">
+        <img src="images/hero-sp1.png" alt="院内写真">
+      </li>
+      <li class="top-main-vidual-img">
+        <img src="images/hero-sp2.png" alt="院内写真">
+      </li>
+      <li class="top-main-vidual-img">
+        <img src="images/hero-sp3.png" alt="院内写真">
+      </li>
+      <li class="top-main-vidual-img">
+        <img src="images/hero-sp4.png" alt="院内写真">
+      </li>
+    </ul>
+
   </div>
   <!-- お知らせ -->
   <section class="news">
@@ -297,7 +320,17 @@
   <script>
     $('.slider').slick({
       autoplay: true,
-      dots: true,
+      dots: false,
+      fade: true,
+    speed: 1500,
+    });
+  </script>
+   <script>
+    $('.slider-sp').slick({
+      autoplay: true,
+      dots: false,
+      fade: true,
+    speed: 1500,
     });
   </script>
 
