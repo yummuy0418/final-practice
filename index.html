@@ -12,13 +12,14 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Noto+Sans+JP&family=Noto+Serif+JP&family=Shippori+Mincho&display=swap"
     rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
 
-  <!-- reset.css modern-css-reset -->
   <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="top.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+  
 </head>
 
 <body>
@@ -66,35 +67,31 @@
     <!-- ヒーローイメージ -->
     <ul class="slider">
       <li class="top-main-vidual-img">
+        <picture>
+          <source srcset="images/hero-sp1.png" media="(max-width: 767px)" type="image/png">
         <img src="images/hero1.png" alt="院内写真">
+      </picture>
       </li>
       <li class="top-main-vidual-img">
+        <picture>
+          <source srcset="images/hero-sp2.png" media="(max-width: 767px)" type="image/png">
         <img src="images/hero2.png" alt="院内写真">
+      </picture>
       </li>
       <li class="top-main-vidual-img">
+        <picture>
+          <source srcset="images/hero-sp3.png" media="(max-width: 767px)" type="image/png">
         <img src="images/hero3.png" alt="院内写真">
+      </picture>
       </li>
-      <li class="top-main-vidual">
+      <li class="top-main-vidual-img">
+        <picture>
+          <source srcset="images/hero-sp4.png" media="(max-width: 767px)" type="image/png">
         <img src="images/hero4.png" alt="院内写真">
+      </picture>
       </li>
     </ul>
-   
-    
-    <!-- スマホ用ヒーローイメージ -->
-    <ul class="slider-sp">
-      <li class="top-main-vidual-img">
-        <img src="images/hero-sp1.png" alt="院内写真">
-      </li>
-      <li class="top-main-vidual-img">
-        <img src="images/hero-sp2.png" alt="院内写真">
-      </li>
-      <li class="top-main-vidual-img">
-        <img src="images/hero-sp3.png" alt="院内写真">
-      </li>
-      <li class="top-main-vidual-img">
-        <img src="images/hero-sp4.png" alt="院内写真">
-      </li>
-    </ul>
+
 
   </div>
   <!-- お知らせ -->
@@ -160,7 +157,7 @@
 
         <div class="course-flex">
           <div class="course-left">
-            <img src="images/price/price1.png" alt="施術ベッド">
+            <img src="images/course-img1.jpg" alt="施術ベッド">
             <p class="course-title">保険診療</p>
             <ul class="course-item">
               <li>骨折・打撲・捻挫・脱臼</li>
@@ -170,7 +167,7 @@
 
           </div>
           <div class="course-right">
-            <img src="images/price/price2.png" alt="施術ベッド">
+            <img src="images/course-img2.jpg" alt="施術ベッド">
             <p class="course-title">自費診療</p>
             <ul class="course-item">
               <li>腰痛・肩こり</li>
@@ -235,6 +232,7 @@
           <img class="title-side-left" src="images/title-side.png">
           <h2>ご気軽にご来院ください</h2>
           <img class="title-side-right" src="images/title-side.png">
+        </div>
         </div>
         <div class="footer-flex">
           <div class="footer-left">
@@ -303,7 +301,6 @@
           <a href="contact.html">ご予約・お問い合わせ</a>
         </div>
       </div>
-    </div>
     <div class="copyright">
       <small>&copy;2023 SAMURAI整体院</small>
     </div>
@@ -311,29 +308,19 @@
   <!-- トップボタン -->
   <a href="#" id="top-page"><img src="images/return-btn.png"></a>
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="main.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="main.js"></script>
   <script>
     $('.slider').slick({
       autoplay: true,
       dots: false,
       fade: true,
     speed: 1500,
+    arrows: false,
     });
   </script>
-   <script>
-    $('.slider-sp').slick({
-      autoplay: true,
-      dots: false,
-      fade: true,
-    speed: 1500,
-    });
-  </script>
-
+   
 </body>
 
 </html>

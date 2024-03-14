@@ -433,12 +433,13 @@ header {
 
 .common-title p {
   color: #468459;
-  margin: 25px auto;
+  margin: 28px auto;
   text-align: center;
 }
 
 .common-title span {
   text-align: center;
+  display: block;
 }
 
 .course-flex {
@@ -543,6 +544,7 @@ header {
 
   .common-title p {
     text-align: center;
+    margin: 18px auto;
   }
 
   .common-title p span {
@@ -706,6 +708,38 @@ header {
   }
 }
 
+/* ペイジャー */
+.pager {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  padding: 0 0;
+}
+
+.pager li {
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.pager .active {
+  background-color: #468459;
+  color: #ffffff;
+  
+}
+
+.pager a {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.pager span {
+  width: 24px;
+  height: 24px;
+  color: #468459;
+}
+
 
 /* フッター */
 .footer-frame img {
@@ -723,33 +757,29 @@ header {
   gap: 30px
 }
 
-.footer-flex .footer-left .footer-minutes {
+.footer-minutes {
   font-size: 24px;
   color: #468459;
-  margin-top: 0;
   text-align: left;
-  margin-left: 16px;
 }
 
-.footer-flex .footer-left .footer-adress {
+.footer-adress {
   font-size: 16px;
   color: #000000;
   text-align: left;
-  margin-left: 16px;
+  padding-top: 15px;
 }
 
 .footer-left .footer-tel {
   font-size: 24px;
   color: #468459;
   text-align: left;
-  margin-left: 16px;
+  padding: 15px 0;
 }
-
-
 
 .footer-tel span {
   font-size: 16px;
-  display: inline !important;
+  display: inline;
   padding-right: 3px;
   margin-left: 0;
 }
@@ -819,7 +849,7 @@ iframe {
   align-items: center;
   text-align: center;
   font-size: 14px;
-  padding: 10px 40px;
+  padding: 10px 30px;
   gap: 40px
 }
 

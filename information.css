@@ -7,7 +7,7 @@
     font-size: 28px
   }
 }
-.post-content {
+.post-container {
   display: flex;
   padding: 50px 50px;
   gap: 70px;
@@ -22,6 +22,14 @@
   gap: 30px;
   padding: 20px;
 }
+
+.post-title h2,
+.post-title h2:visited,
+.post-title h2:hover,
+.post-title h2:active{ 
+  color: #000000;
+}
+
 
 .post-photo {
   border-radius: 16px;
@@ -40,7 +48,11 @@
   align-items: center;
 }
 
-.post-date time {
+.post-date time,
+.post-date time:visited,
+.post-date time:hover,
+.post-date time:active {
+  color: #000000;
   font-size: 18px;
 }
 
@@ -71,16 +83,7 @@
 
 
 
-.number {
-  text-align: center;
-}
-.number .active {
-  background-color: #468459;
-  color: #ffffff;
-}
-.number p {
-  display: inline;
-}
+
 
 @media screen and (max-width: 767px) {
   .post-container {

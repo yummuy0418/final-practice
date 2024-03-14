@@ -60,6 +60,7 @@
         <div class="hamburger-cover"></div>
       </div>
   </header>
+  <main>
    <!-- ヘッダー下メッセージとヒーローイメージ -->
    <div class="main-vidual">
     <!-- メッセージ -->
@@ -120,7 +121,7 @@
   <div class="form-item">
     <label for="selectbox">お悩み（必須）</label> 
     <select type="selectbox" class="blank">
-      <option value="placeholder">お悩みを選択してください</option>
+      <option value="" selected>お悩みを選択してください</option>
       <option value="youtuu">腰痛</option>
       <option value="katakori">肩こり</option>
     </select>
@@ -128,7 +129,7 @@
     
     <div class="form-item">
     <label for="message">お問い合わせ内容</label> 
-    <textarea name="message" class="blank" placeholder="できるだけ詳しいお問い合わせ内容を記入してください"></textarea>
+    <textarea name="message" class="blank-textarea" placeholder="できるだけ詳しいお問い合わせ内容を記入してください"></textarea>
     </div>
 
     <input class="submit" type="submit" value="送信する">
@@ -138,6 +139,7 @@
 </div>
 
 </div>
+</main>
   <!-- フッター -->
   <footer>
     <div class="footer-frame">
@@ -149,6 +151,7 @@
           <img class="title-side-left" src="images/title-side.png">
           <h2>ご気軽にご来院ください</h2>
           <img class="title-side-right" src="images/title-side.png">
+        </div>
         </div>
         <div class="footer-flex">
           <div class="footer-left">
@@ -179,7 +182,7 @@
               </tr>
               <tr class="pm">
                 <td style="border-radius: 0 0 0 4px;">15:30〜20:00</td>
-                <td >⚫︎</td>
+                <td>⚫︎</td>
                 <td>⚫︎</td>
                 <td>-</td>
                 <td>⚫︎</td>
@@ -188,7 +191,7 @@
                 <td style="border-radius: 0 0 4px 0;">⚫︎</td>
               </tr>
 
-            </table> 
+            </table>
 
 
             <div class="footer-btn">
@@ -217,7 +220,6 @@
           <a href="contact.html">ご予約・お問い合わせ</a>
         </div>
       </div>
-    </div>
     <div class="copyright">
       <small>&copy;2023 SAMURAI整体院</small>
     </div>
@@ -225,12 +227,8 @@
   <!-- トップボタン -->
   <a href="#" id="top-page"><img src="images/return-btn.png"></a>
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="main.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="main.js"></script>
 
 </body>
 </html>
