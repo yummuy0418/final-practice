@@ -43,28 +43,19 @@ header {
 /* スライドショー */
 .slider {
 width: 100%;
-max-width: 980px;
+width: clump(100px, 80%, 1200px);
 margin-right: 0;
-margin-left:auto;
+margin-left:17%;
 }
 
 @media screen and (max-width: 767px){
   .slider {
-    padding-top: 0;
     z-index: -1;
-    position: relative;
-    height: 464px;
-    
+    width: 80%;
+    width: clump(100px, 80%, 1200px);
+    margin-right: 0;
+    margin-left:17%;
   }
-
-  .slider img {
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    width: 555px;
-  }
-
 }
 
 /* メインビジュアル */
@@ -89,7 +80,6 @@ margin-left:auto;
 @media screen and (max-width: 767px) {
   .top-main-vidual-sp-img {
     display: block;
-    padding-top: 0;
     z-index: -1;
     position: relative;
     height: 464px;
@@ -114,7 +104,7 @@ margin-left:auto;
   font-family: 'Shippori Mincho', serif;
   position: absolute;
   left: 2.5%;
-  top: 22%;
+  top: 28%;
   z-index: 10;
   font-size: 2vw;
 }
