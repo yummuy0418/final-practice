@@ -97,7 +97,7 @@ header {
 .nav-pc .reservation {
   background-color: #0C4324;
   border-radius: 5px;
-  padding: 0px 10px;
+  padding: 0px 12px;
   line-height: 44px;
   color: white !important;
 }
@@ -328,6 +328,7 @@ header {
 
 .bg-person {
   position: relative;
+  overflow: hidden;
 }
 
 .bg-person::before {
@@ -342,7 +343,6 @@ header {
   z-index: -1;
   width: 440px;
   height: 336px;
-  overflow: hidden;
 }
 
 .concept-right img {
@@ -401,17 +401,12 @@ header {
   position: relative;
   background-color: #F0F5E1;
   z-index: 0;
+  overflow: hidden;
 }
 
 .course-frame img {
   width: 100%;
 }
-
-
-.course-content {
-  overflow: hidden;
-}
-
 
 .common-title-main {
   display: flex;
@@ -469,6 +464,7 @@ header {
 
 .bg-person2 {
   position: relative;
+  overflow: hidden;
 }
 
 .bg-person2::before {
