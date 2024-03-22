@@ -5,12 +5,21 @@
   padding: 70px 100px;
 }
 
+.customer-title {
+  padding: 10px 0;
+}
+
+.customer-item img {
+  width: 20%;
+}
+
 .customer-item {
   display: flex;
   flex-direction: row;
   gap: 40px;
   width: 100%;
   padding-bottom: 10px;
+  align-items: center;
 }
 
 .title-coment {
@@ -39,8 +48,6 @@
     align-items: center;
     gap: 0px;
   }
-
- 
 
   .title-coment {
     align-items: center;

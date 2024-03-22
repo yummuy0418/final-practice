@@ -38,11 +38,14 @@ a {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 120px;
   z-index: -1;
+  opacity: 25%;
 }
 .flow-catch ol {
   padding-left: 22px;
   padding-top: 30px;
   line-height: 3;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .flow-right {

@@ -16,6 +16,10 @@
   width: 100%;
 }
 
+.post-detail {
+  padding: 20px;
+}
+
 .post-title h2 {
   color: #0C4324;
 }
@@ -36,6 +40,12 @@
 .post-detail h3 {
   color: #0C4324;
   font-size: 24px;
+  font-weight: bold;
+}
+
+.post-detail h4 {
+  color: #0C4324;
+  font-size: 18px;
   font-weight: bold;
 }
 

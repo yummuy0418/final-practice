@@ -158,7 +158,7 @@ header {
 }
 
 .main-message h1 {
-  border-bottom: dashed #468459;
+  border-bottom: 1px dashed #468459;
   font-size: 18px;
   font-weight: 400;
   line-height: 100%;
@@ -224,8 +224,19 @@ header {
 /* サイトマップ */
 .site {
   padding-left: 13%;
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: 14px;
+}
+
+.site span {
+  color: #0C4324;
+}
+
+.news a:link, 
+.news a:visited,
+.news a:hover,
+.news a:active{
+color: #000000;
 }
 
 @media screen and (max-width: 767px) {
@@ -239,7 +250,7 @@ header {
 .concept {
   overflow: hidden;
   padding-top: 70px;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
   position: relative;
 }
 
@@ -269,10 +280,12 @@ header {
 .common-icon-title p {
   font-size: 24px;
   color: #468459;
+  font-weight: 700;
 }
 
 .common-title-under {
   color: #468459;
+  font-weight: 400;
 }
 
 .concept-left::before {
@@ -284,10 +297,12 @@ header {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 120px;
   z-index: -1;
+  opacity: 25%;
 }
 
 .concept-catch {
   color: #468459;
+  font-weight: 700;
   line-height: 1.8;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -318,7 +333,13 @@ header {
 .concept-btn a:visited,
 .concept-btn a:hover,
 .concept-btn a:active {
-  color: #000000
+  color: #000000;
+}
+
+.concept-btn:hover {
+  transform: translateY(-5px);
+  background-color: #468459;
+  color: #ffffff;
 }
 
 .concept-right {
@@ -343,6 +364,7 @@ header {
   z-index: -1;
   width: 440px;
   height: 336px;
+  opacity: 25%;
 }
 
 .concept-right img {
@@ -352,7 +374,6 @@ header {
 @media screen and (max-width: 767px) {
   .concept {
     padding-top: 0;
-
   }
 
   .concept-flex {
@@ -360,14 +381,12 @@ header {
     justify-content: center;
   }
 
-
-
   .concept-btn {
     margin: 0 auto;
   }
 
   .concept-right {
-    padding-top: 70px;
+    padding-top: 40px;
     width: 90%;
   }
 
@@ -377,7 +396,7 @@ header {
 
   .concept-left {
     width: 100%;
-    padding: 30px;
+    padding: 0 16px;
   }
 
   .concept-left::before {
@@ -387,14 +406,11 @@ header {
   }
 
   .bg-person::before {
-    bottom: -60px;
+    bottom: -5%;
     right: -35%;
     background-size: 70%;
   }
-
 }
-
-
 
 /* コース・料金 */
 .bg-person2 {
@@ -430,6 +446,7 @@ header {
   color: #468459;
   margin: 28px auto;
   text-align: center;
+  font-weight: 700;
 }
 
 .common-title span {
@@ -446,7 +463,7 @@ header {
 
 .course-left,
 .course-right {
-  margin: 30px 30px;
+  padding: 30px 30px;
   position: relative;
   z-index: 1;
 }
@@ -484,14 +501,17 @@ header {
 
 .course-title {
   font-size: 24px;
+  font-weight: 700;
   color: #0C4324;
   padding: 15px 0 0;
 }
 
 .course-item {
   margin-top: 0px;
+  padding-top: 5px;
   font-size: 18px;
-  line-height: 3;
+  font-weight:400;
+  line-height: 2;
   list-style-position: inside;
   padding-left: 10px;
 }
@@ -506,26 +526,32 @@ header {
 }
 
 .course-btn {
-  border: solid 1px;
+  border: solid 1px #000000;
   border-radius: 6px;
   font-size: 14px;
   padding: 3px 23px;
   margin: 0 auto;
   width: 200px;
   text-align: center;
-  position: relative;
+  display: block;
   z-index: 3;
 }
 
-.course-btn a:link,
-.course-btn a:visited,
-.course-btn a:hover,
-.course-btn a:active {
+.course-btn:link,
+.course-btn:visited,
+.course-btn:hover,
+.course-btn:active {
   color: #000000
 }
 
+.course-btn:hover {
+  transform: translateY(-5px);
+  background-color: #468459;
+  color: #ffffff;
+}
+
 .course-content {
-  padding-top: 140px;
+  padding-top: 125px;
   padding-bottom: 60px;
 }
 
@@ -550,11 +576,18 @@ header {
   .course-flex {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 16px;
+  }
+
+  .course-left,
+  .course-right {
+   padding: 0;
   }
 
   .course-left img,
   .course-right img {
-    width: 100%;
+    height: 220px;
   }
 
 
@@ -633,6 +666,8 @@ header {
 
 .customer-item img {
   margin: 0 auto;
+  border-radius: 50%;
+  width: 90%;
 }
 
 .customer-title {
@@ -646,7 +681,8 @@ header {
 
 .customer-coment {
   font-size: 18px;
-  line-height: 2;
+  line-height: 1.5;
+  font-weight: 400;
   margin: 0 auto;
 }
 
@@ -658,17 +694,26 @@ header {
   margin: 0 auto;
   width: 200px;
   text-align: center;
+  display: block;
 }
 
-.voice-btn a:link,
-.voice-btn a:visited,
-.voice-btn a:hover,
-.voice-btn a:active {
+.voice-btn:link,
+.voice-btn:visited,
+.voice-btn:hover,
+.voice-btn:active {
   color: #000000
 }
 
-@media screen and (max-width: 767px) {
+.voice-btn:hover {
+  transform: translateY(-5px);
+  background-color: #468459;
+  color: #ffffff;
+}
 
+@media screen and (max-width: 767px) {
+  .voice {
+    padding-bottom: 40px;
+  }
   .voice-img-pc {
     display: none;
   }
@@ -698,9 +743,14 @@ header {
     padding: 0 18px;
   }
 
+  .customer-item img {
+    width: 75%;
+  }
+
   .customer {
     flex-direction: column;
     align-items: center;
+    padding: 10px 16px 30px 16px;
   }
 }
 
@@ -711,6 +761,7 @@ header {
   justify-content: center;
   gap: 2px;
   padding: 0 0;
+  color: #468459;
 }
 
 .pager li {
@@ -733,7 +784,6 @@ header {
 .pager span {
   width: 24px;
   height: 24px;
-  color: #468459;
 }
 
 
@@ -755,6 +805,7 @@ header {
 
 .footer-minutes {
   font-size: 24px;
+  font-weight: 700;
   color: #468459;
   text-align: left;
 }
@@ -768,6 +819,7 @@ header {
 
 .footer-left .footer-tel {
   font-size: 24px;
+  font-weight: 700;
   color: #468459;
   text-align: left;
   padding: 15px 0;
@@ -790,9 +842,13 @@ header {
 
 .footer-hour th,
 .footer-hour td {
-  padding: 3px 12px;
+  padding: 5px 12px;
   text-align: center;
   border: 1px solid #ECECEC;
+}
+
+.footer-hour th {
+  padding: 6px 12px;
 }
 
 .footer-hour th {
@@ -829,6 +885,10 @@ header {
   font-size: 16px;
   display: block;
   text-align: center;
+}
+
+.footer-btn:hover {
+  transform: translateY(-5px);
 }
 
 iframe {
@@ -904,6 +964,10 @@ iframe {
 }
 
 @media screen and (max-width: 767px) {
+  .footer-content {
+    padding-top: 30px;
+  }
+  
   .footer-flex {
     flex-direction: column;
     align-items: center;
@@ -925,7 +989,7 @@ iframe {
   }
 
   .footer-hour {
-    width: 100%;
+    table-layout: fixed;
   }
 
   .footer-btn {

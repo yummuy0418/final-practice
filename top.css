@@ -23,23 +23,23 @@ header {
 
 .top-nav-pc a:link {
   color: #ffffff;
-  text-shadow: 1px 1px 0 rgb(125 125 125);
+  text-shadow: 1px 1px 0 rgb(125, 125, 125, 0.25);
 }
 
 .top-nav-pc a:visited {
   color: #ffffff;
-  text-shadow: 1px 1px 0 rgb(125 125 125);
+  text-shadow: 1px 1px 0 rgb(125, 125, 125, 0.25);
 }
 
 .top-nav-pc a:hover {
   color: #ffffff;
   text-decoration: underline;
-  text-shadow: 1px 1px 0 rgb(125 125 125);
+  text-shadow: 1px 1px 0 rgb(125, 125, 125, 0.25);
 }
 
 .top-nav-pc a:active {
   color: #ffffff;
-  text-shadow: 1px 1px 0 rgb(125 125 125);
+  text-shadow: 1px 1px 0 rgb(125, 125, 125, 0.25);
 }
 
 
@@ -108,7 +108,8 @@ overflow: hidden;
 
 
 .top-main-message span {
-  border-right: dashed #468459;
+  border-right: 1px dashed #468459;
+  padding: 2px;
 }
 
 .top-main-message::before {
