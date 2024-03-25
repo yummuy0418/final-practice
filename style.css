@@ -1,3 +1,12 @@
+/*
+Theme Name: final-practice
+Description: SAMURAI FInal
+Version:1.0.0
+Auther: SAMURAI ENGINEER
+Author URI: https://www.sejuku.net/
+*/
+
+
 @charset "UTF-8";
 
 html {
@@ -97,7 +106,7 @@ header {
 .nav-pc .reservation {
   background-color: #0C4324;
   border-radius: 5px;
-  padding: 0px 12px;
+  padding: 0px 10px;
   line-height: 44px;
   color: white !important;
 }
@@ -158,7 +167,7 @@ header {
 }
 
 .main-message h1 {
-  border-bottom: 1px dashed #468459;
+  border-bottom: dashed #468459;
   font-size: 18px;
   font-weight: 400;
   line-height: 100%;
@@ -224,19 +233,8 @@ header {
 /* サイトマップ */
 .site {
   padding-left: 13%;
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 14px;
-}
-
-.site span {
-  color: #0C4324;
-}
-
-.news a:link, 
-.news a:visited,
-.news a:hover,
-.news a:active{
-color: #000000;
 }
 
 @media screen and (max-width: 767px) {
@@ -250,7 +248,7 @@ color: #000000;
 .concept {
   overflow: hidden;
   padding-top: 70px;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
   position: relative;
 }
 
@@ -280,12 +278,10 @@ color: #000000;
 .common-icon-title p {
   font-size: 24px;
   color: #468459;
-  font-weight: 700;
 }
 
 .common-title-under {
   color: #468459;
-  font-weight: 400;
 }
 
 .concept-left::before {
@@ -297,12 +293,10 @@ color: #000000;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 120px;
   z-index: -1;
-  opacity: 25%;
 }
 
 .concept-catch {
   color: #468459;
-  font-weight: 700;
   line-height: 1.8;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -333,13 +327,7 @@ color: #000000;
 .concept-btn a:visited,
 .concept-btn a:hover,
 .concept-btn a:active {
-  color: #000000;
-}
-
-.concept-btn:hover {
-  transform: translateY(-5px);
-  background-color: #468459;
-  color: #ffffff;
+  color: #000000
 }
 
 .concept-right {
@@ -349,7 +337,6 @@ color: #000000;
 
 .bg-person {
   position: relative;
-  overflow: hidden;
 }
 
 .bg-person::before {
@@ -364,7 +351,7 @@ color: #000000;
   z-index: -1;
   width: 440px;
   height: 336px;
-  opacity: 25%;
+  overflow: hidden;
 }
 
 .concept-right img {
@@ -374,6 +361,7 @@ color: #000000;
 @media screen and (max-width: 767px) {
   .concept {
     padding-top: 0;
+
   }
 
   .concept-flex {
@@ -381,12 +369,14 @@ color: #000000;
     justify-content: center;
   }
 
+
+
   .concept-btn {
     margin: 0 auto;
   }
 
   .concept-right {
-    padding-top: 40px;
+    padding-top: 70px;
     width: 90%;
   }
 
@@ -396,7 +386,7 @@ color: #000000;
 
   .concept-left {
     width: 100%;
-    padding: 0 16px;
+    padding: 30px;
   }
 
   .concept-left::before {
@@ -406,23 +396,31 @@ color: #000000;
   }
 
   .bg-person::before {
-    bottom: -5%;
+    bottom: -60px;
     right: -35%;
     background-size: 70%;
   }
+
 }
+
+
 
 /* コース・料金 */
 .bg-person2 {
   position: relative;
   background-color: #F0F5E1;
   z-index: 0;
-  overflow: hidden;
 }
 
 .course-frame img {
   width: 100%;
 }
+
+
+.course-content {
+  overflow: hidden;
+}
+
 
 .common-title-main {
   display: flex;
@@ -446,7 +444,6 @@ color: #000000;
   color: #468459;
   margin: 28px auto;
   text-align: center;
-  font-weight: 700;
 }
 
 .common-title span {
@@ -463,7 +460,7 @@ color: #000000;
 
 .course-left,
 .course-right {
-  padding: 30px 30px;
+  margin: 30px 30px;
   position: relative;
   z-index: 1;
 }
@@ -481,7 +478,6 @@ color: #000000;
 
 .bg-person2 {
   position: relative;
-  overflow: hidden;
 }
 
 .bg-person2::before {
@@ -501,17 +497,14 @@ color: #000000;
 
 .course-title {
   font-size: 24px;
-  font-weight: 700;
   color: #0C4324;
   padding: 15px 0 0;
 }
 
 .course-item {
   margin-top: 0px;
-  padding-top: 5px;
   font-size: 18px;
-  font-weight:400;
-  line-height: 2;
+  line-height: 3;
   list-style-position: inside;
   padding-left: 10px;
 }
@@ -526,32 +519,26 @@ color: #000000;
 }
 
 .course-btn {
-  border: solid 1px #000000;
+  border: solid 1px;
   border-radius: 6px;
   font-size: 14px;
   padding: 3px 23px;
   margin: 0 auto;
   width: 200px;
   text-align: center;
-  display: block;
+  position: relative;
   z-index: 3;
 }
 
-.course-btn:link,
-.course-btn:visited,
-.course-btn:hover,
-.course-btn:active {
+.course-btn a:link,
+.course-btn a:visited,
+.course-btn a:hover,
+.course-btn a:active {
   color: #000000
 }
 
-.course-btn:hover {
-  transform: translateY(-5px);
-  background-color: #468459;
-  color: #ffffff;
-}
-
 .course-content {
-  padding-top: 125px;
+  padding-top: 140px;
   padding-bottom: 60px;
 }
 
@@ -576,18 +563,11 @@ color: #000000;
   .course-flex {
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding: 16px;
-  }
-
-  .course-left,
-  .course-right {
-   padding: 0;
   }
 
   .course-left img,
   .course-right img {
-    height: 220px;
+    width: 100%;
   }
 
 
@@ -666,8 +646,6 @@ color: #000000;
 
 .customer-item img {
   margin: 0 auto;
-  border-radius: 50%;
-  width: 90%;
 }
 
 .customer-title {
@@ -681,8 +659,7 @@ color: #000000;
 
 .customer-coment {
   font-size: 18px;
-  line-height: 1.5;
-  font-weight: 400;
+  line-height: 2;
   margin: 0 auto;
 }
 
@@ -694,26 +671,17 @@ color: #000000;
   margin: 0 auto;
   width: 200px;
   text-align: center;
-  display: block;
 }
 
-.voice-btn:link,
-.voice-btn:visited,
-.voice-btn:hover,
-.voice-btn:active {
+.voice-btn a:link,
+.voice-btn a:visited,
+.voice-btn a:hover,
+.voice-btn a:active {
   color: #000000
 }
 
-.voice-btn:hover {
-  transform: translateY(-5px);
-  background-color: #468459;
-  color: #ffffff;
-}
-
 @media screen and (max-width: 767px) {
-  .voice {
-    padding-bottom: 40px;
-  }
+
   .voice-img-pc {
     display: none;
   }
@@ -743,14 +711,9 @@ color: #000000;
     padding: 0 18px;
   }
 
-  .customer-item img {
-    width: 75%;
-  }
-
   .customer {
     flex-direction: column;
     align-items: center;
-    padding: 10px 16px 30px 16px;
   }
 }
 
@@ -761,7 +724,6 @@ color: #000000;
   justify-content: center;
   gap: 2px;
   padding: 0 0;
-  color: #468459;
 }
 
 .pager li {
@@ -784,6 +746,7 @@ color: #000000;
 .pager span {
   width: 24px;
   height: 24px;
+  color: #468459;
 }
 
 
@@ -805,7 +768,6 @@ color: #000000;
 
 .footer-minutes {
   font-size: 24px;
-  font-weight: 700;
   color: #468459;
   text-align: left;
 }
@@ -819,7 +781,6 @@ color: #000000;
 
 .footer-left .footer-tel {
   font-size: 24px;
-  font-weight: 700;
   color: #468459;
   text-align: left;
   padding: 15px 0;
@@ -842,13 +803,9 @@ color: #000000;
 
 .footer-hour th,
 .footer-hour td {
-  padding: 5px 12px;
+  padding: 3px 12px;
   text-align: center;
   border: 1px solid #ECECEC;
-}
-
-.footer-hour th {
-  padding: 6px 12px;
 }
 
 .footer-hour th {
@@ -885,10 +842,6 @@ color: #000000;
   font-size: 16px;
   display: block;
   text-align: center;
-}
-
-.footer-btn:hover {
-  transform: translateY(-5px);
 }
 
 iframe {
@@ -964,10 +917,6 @@ iframe {
 }
 
 @media screen and (max-width: 767px) {
-  .footer-content {
-    padding-top: 30px;
-  }
-  
   .footer-flex {
     flex-direction: column;
     align-items: center;
@@ -989,7 +938,7 @@ iframe {
   }
 
   .footer-hour {
-    table-layout: fixed;
+    width: 100%;
   }
 
   .footer-btn {

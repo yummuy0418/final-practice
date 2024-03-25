@@ -34,7 +34,7 @@
       <a href="course-price.html">コース・料金</a>
       <a href="information.html">お知らせ</a>
       <a href="voice.html">お客様の声</a>
-      <a class="reservation" href="contact.html">ご予約・お問い合わせ</a>
+      <a class="reservation" href="contact.html">ご予約・お問合せ</a>
     </nav>
 
     <img class="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く">
@@ -79,7 +79,10 @@
       </picture>
       </li>
       <li class="top-main-vidual-img">
+        <picture>
+          <source srcset="images/hero-sp3.png" media="(max-width: 767px)" type="image/png">
         <img src="images/hero3.png" alt="院内写真">
+      </picture>
       </li>
       <li class="top-main-vidual-img">
         <picture>
@@ -103,11 +106,11 @@
           <span>営業日時</span>
         </div>
         <div class="news-info">
-          <a href="information-detail.html">年末年始の営業時間に<span>ついて</span></a>
+          <p>年末年始の営業時間に<span>ついて</span></p>
         </div>
       </div>
     </div>
-    <a href="information.html">→お知らせ一覧へ</a>
+    <a>→お知らせ一覧へ</a>
   </section>
  
 
@@ -129,10 +132,7 @@
         </div>
 
         <div class="concept-right">
-          <picture>
-            <source srcset="images/concept-right-sp.png" media="(max-width: 767px)" >
-          <img src="images/concept-right.png" alt="施術写真">
-        </picture>
+          <img src="images/concept-right-img.png" alt="施術写真">
         </div>
       </div>
     </section>
@@ -159,7 +159,6 @@
         <div class="course-flex">
           <div class="course-left">
             <img src="images/course-img1.jpg" alt="施術ベッド">
-       
             <p class="course-title">保険診療</p>
             <ul class="course-item">
               <li>骨折・打撲・捻挫・脱臼</li>
@@ -179,9 +178,9 @@
 
           </div>
         </div>
-      
-          <a class="course-btn" href="course-price.html">→コース・料金詳細へ</a>
-      
+        <div class="course-btn">
+          <a href="#">→コース・料金詳細へ</a>
+        </div>
       </div>
 
     </section>
@@ -203,24 +202,24 @@
     </div>
     <div class="customer">
       <div class="customer-item">
-        <img src="images/voice-customer1.jpg">
+        <img src="images/customer1.png">
         <p class="customer-title">S・K様　30代女性</p>
         <p class="customer-coment">1ヶ月で腰の痛みが軽減しました。自分で自宅でできるケアも教えていただき、お任せしてよかったです。</p>
       </div>
       <div class="customer-item">
-        <img src="images/voice-customer2.jpg">
+        <img src="images/customer2.png">
         <p class="customer-title">T・M様　40代男性</p>
         <p class="customer-coment">マラソンで右膝が痛むので、施術を受けています。なぜ痛みが生じるのかを身体の仕組みから教えていただき、普段の練習メニューも工夫できています。</p>
       </div>
       <div class="customer-item">
-        <img src="images/voice-customer3.jpg">
+        <img src="images/customer3.png">
         <p class="customer-title">S・T様　60代女性</p>
         <p class="customer-coment">転倒して足を骨折したのをきっかけに、痛みの軽減と筋肉の衰えを防ぐための方針を立てていただいています。今は毎日元気に近所を散歩できています。</p>
       </div>
     </div>
-
-      <a class="voice-btn" href="voice.html">→お客様の声一覧へ</a>
-   
+    <div class="voice-btn">
+      <a href="#">→お客様の声一覧へ</a>
+    </div>
   </section>
 
   
@@ -278,7 +277,7 @@
 
 
             <div class="footer-btn">
-              <a href="contact.html">ご予約・お問い合わせはこちらから</a>
+              <a href="#">ご予約・お問い合わせはこちらから</a>
             </div>
           </div>
 
@@ -289,7 +288,7 @@
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-      
+      </div>
       <div class="footer-nav">
 
         <img class="logo" src="images/logo.png">
@@ -303,7 +302,6 @@
           <a href="contact.html">ご予約・お問い合わせ</a>
         </div>
       </div>
-    </div>
     <div class="copyright">
       <small>&copy;2023 SAMURAI整体院</small>
     </div>

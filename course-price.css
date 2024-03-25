@@ -16,30 +16,18 @@
   .insurance-selfpay {
     display: flex;
     padding: 50px 70px;
-    gap: 40px;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 30px;
   }
 
   .insurance-selfpay-left {
+    width: 55%;
     padding-left: 10px;
     padding-top: 10px;
-    width: 38%;
   }
 
 
   .insurance-selfpay-explain {
     font-size: 16px;
-    padding-top: 15px;
-  }
-
-  .insurance-selfpay-explain p {
-    padding-bottom: 5px;
-  }
-
-  .insurance-selfpay-explain li {
-    line-height: 2.1;
   }
 
   .selfpay-price {
