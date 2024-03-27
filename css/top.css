@@ -114,7 +114,7 @@ overflow: hidden;
 
 .top-main-message::before {
   content: "";
-  background-image: url(images/_x31_7.png);
+  background-image: url("../../images/_x31_7.png");
   background-repeat: no-repeat;
   background-size: 90%;
   width: 146px;

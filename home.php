@@ -194,7 +194,7 @@
             <li>その他</li>
           </ul>
         </div>
-      </div>
+      
       <ul class="pager">
         <li><a class="active">1</a></li>
         <li><a>2</a></li>
@@ -202,6 +202,7 @@
         <li><span>•••</span></li>
         <li><a>6</a></li>
       </ul>
+      </div>
 
     </section>
   </main>

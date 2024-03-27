@@ -9,11 +9,11 @@
     </div>
     <!-- ヒーローイメージ -->
     <div class="main-vidual-img">
-      <img src="images/about/aboutus-mainvidual.png" alt="施術写真">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/about/aboutus-mainvidual.png" alt="施術写真">
     </div>
        <!-- スマホ用ヒーローイメージ -->
        <div class="main-vidual-sp-img">
-      <img src="images/about/aboutus-mainvidual-sp.png" alt="院内写真">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/about/aboutus-mainvidual-sp.png" alt="院内写真">
     </div>
   </div>
   
@@ -27,7 +27,7 @@
     <div class="concept-flex">
       <div class="concept-left">
         <div class="common-icon-title">
-          <img src="images/before-title-icon.png" alt="コンセプト">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/before-title-icon.png" alt="コンセプト">
           <p>Concept</p>
         </div>
         <p class="common-title-under">特長</p>
@@ -39,8 +39,8 @@
 
       <div class="concept-right">
         <picture>
-          <source srcset="images/concept-right-sp.png" media="(max-width: 767px)" >
-        <img src="images/concept-right.png" alt="施術写真">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/images/concept-right-sp.png" media="(max-width: 767px)" >
+        <img src="<?php echo get_template_directory_uri(); ?>/images/concept-right.png" alt="施術写真">
       </picture>
       </div>
     </div>
@@ -53,7 +53,7 @@
     <div class="flow-flex">
       <div class="flow-left">
         <div class="common-icon-title">
-          <img src="images/before-title-icon.png" alt="フロー">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/before-title-icon.png" alt="フロー">
           <p>Flow</p>
         </div>
         <p class="common-title-under">施術の流れ</p>
@@ -70,8 +70,8 @@
 
       <div class="concept-right">
         <picture>
-          <source srcset="images/about/flow-right-sp.png" media="(max-width: 767px)" >
-        <img src="images/about/flow-right.png" alt="施術写真">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/images/about/flow-right-sp.png" media="(max-width: 767px)" >
+        <img src="<?php echo get_template_directory_uri(); ?>/images/about/flow-right.png" alt="施術写真">
       </picture>
       </div>
     </div>
@@ -81,9 +81,9 @@
   <section class="point">
     <div class="common-title point-title">
       <div class="common-title-main">
-        <img class="title-side-left" src="images/title-side.png">
+        <img class="title-side-left" src="<?php echo get_template_directory_uri(); ?>/images/title-side.png">
             <h2>根本改善のポイント</h2>
-            <img class="title-side-right" src="images/title-side.png">
+            <img class="title-side-right" src="<?php echo get_template_directory_uri(); ?>/images/title-side.png">
           </div>
           
       </div>
@@ -95,15 +95,15 @@
       </div>
       <div class="point-photo">
         <div class="point-photo1">
-        <img src="images/about/point1.png">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/about/point1.png">
         <p>丁寧なカウンセリング</p>
       </div>
       <div class="point-photo2">
-        <img src="images/about/point2.png">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/about/point2.png">
         <p>徹底的分析</p>
       </div>
       <div class="point-photo3">
-        <img src="images/about/point3.png">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/about/point3.png">
         <p>施術計画のご提案</p>
       </div>
 

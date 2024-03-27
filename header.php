@@ -11,16 +11,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Noto+Sans+JP&family=Noto+Serif+JP&family=Shippori+Mincho&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+
   <!-- reset.css modern-css-reset -->
   <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/top.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/about.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/information.css">
+  <?php if(is_page('about')) { ?>
+        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
+        <link href="<?php echo get_template_directory_uri(); ?>/css/about.css" rel="stylesheet ">
+        <?php }?>
+  <?php if(is_page('course')) { ?>
+        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
+        <link href="<?php echo get_template_directory_uri(); ?>/css/course-price.css" rel="stylesheet ">
+        <?php }?>
+  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/information.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/informatio-detail.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/voice.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact-thanks.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact-thanks.css"> -->
   <?php wp_head(); ?>
 </head>
 
@@ -34,8 +44,8 @@
     <!-- PC用ナビゲーション -->
     <nav class="nav-pc">
       <a href="<?php echo home_url(); ?>/front-page">ホーム</a>
-      <a href="<?php echo home_url(); ?>/page-about">当院について</a>
-      <a href="<?php echo home_url(); ?>/page-course">コース・料金</a>
+      <a href="<?php echo home_url(); ?>/about">当院について</a>
+      <a href="<?php echo home_url(); ?>/course">コース・料金</a>
       <a href="<?php echo home_url(); ?>/home">お知らせ</a>
       <a href="<?php echo home_url(); ?>/archive-voice">お客様の声</a>
       <a class="reservation" href="<?php echo home_url(); ?>/page-contact">ご予約・お問合せ</a>
@@ -43,17 +53,17 @@
 
 
     <!-- スマホ用メニューボタン -->
-    <img class="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く">
+    <img class="menu-sp" src="<?php echo get_template_directory_uri(); ?>/images/button-menu.png" alt="ナビゲーションを開く">
 
     <!-- スマホ用ナビゲーション ハンバーガー -->
     <div class="nav-sp">
-      <img class="close" src="images/button-close.png" alt="ナビゲーションを閉じる">
+      <img class="close" src="<?php echo get_template_directory_uri(); ?>/images/button-close.png" alt="ナビゲーションを閉じる">
       <nav>
-        <a class="logo-sp" href="index.html"><img src="images/logo.png" alt="トップページに戻る"></a>
+        <a class="logo-sp" href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="トップページに戻る"></a>
         <p class="humberger-menu">メニュー</p>
         <a class="menu" href="<?php echo home_url(); ?>/front-page">ホーム</a>
-        <a class="menu" href="<?php echo home_url(); ?>/page-about">当院について</a>
-        <a class="menu" href="<?php echo home_url(); ?>/page-course">コース・料金</a>
+        <a class="menu" href="<?php echo home_url(); ?>/about">当院について</a>
+        <a class="menu" href="<?php echo home_url(); ?>/course">コース・料金</a>
         <a class="menu" href="<?php echo home_url(); ?>/home">お知らせ</a>
         <a class="menu" href="<?php echo home_url(); ?>/archive-voice">お客様の声</a>
         <div class="menu-contact-btn">

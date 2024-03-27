@@ -9,8 +9,10 @@
 }
 .post-container {
   display: flex;
+  flex-wrap: wrap;
   padding: 50px 50px;
   gap: 70px;
+  justify-content: center;
 }
 
 .post-left {
@@ -80,6 +82,10 @@
   line-height: 2.5;
 }
 
+.post-right {
+  width: 20%;
+}
+
 
 
 
@@ -92,15 +98,17 @@
   .post-container {
     flex-direction: column;
     padding: 0 16px;
+    gap: 10px;
   }
   .post-left {
     width: 100%;
     padding-top: 15px;
+    order: 1;
   }
 
   .post-with-photo {
     flex-direction: column;
-    gap: 10px;
+    gap: 0;
   }
 
   .post-photo {
@@ -116,6 +124,12 @@
     font-weight: 900;
   }
 
+  .post-right {
+    order: 3;
+    width: 100%;
+    padding-top: 30px;
+  }
+
   .post-right .category {
     font-size: 18px;
   }
@@ -123,4 +137,9 @@
   .post-right li{
     font-size: 18px;
   }
+
+  .pager {
+    order: 2;
+  }
+
 }

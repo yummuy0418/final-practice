@@ -946,6 +946,16 @@ iframe {
 
 
 @media screen and (max-width: 1024px) {
+  .am td:nth-child(1),
+.pm td:nth-child(1) {
+  font-size: 11px;
+}
+ .footer-btn {
+  width: 250px;
+ }
+.footer-btn a {
+  font-size: 14px;
+}
   .footer-nav {
     gap: 15px;
   }

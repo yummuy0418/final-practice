@@ -67,6 +67,12 @@
   text-align: center;
   padding-top: 30px;
 }
+
+.page .forward {
+  display: flex;
+  gap: 3px;
+}
+
 .page a {
   padding: 15px;
   font-size: 18px;
@@ -74,6 +80,14 @@
 
 .page .list-sp {
   display: none;
+}
+
+.page .next {
+  display: flex;
+  gap: 3px;
+}
+.next .icon-right {
+  transform: scale(-1, 1);
 }
 
 @media screen and (max-width: 1024px) {

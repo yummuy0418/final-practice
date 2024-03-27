@@ -67,8 +67,8 @@
 
       <div class="footer-nav-navi">
         <a href="<?php echo home_url(); ?>/front-page">TOP</a>
-        <a href="<?php echo home_url(); ?>/page-about">当院について</a>
-        <a href="<?php echo home_url(); ?>/page-course">コース・料金</a>
+        <a href="<?php echo home_url(); ?>/about">当院について</a>
+        <a href="<?php echo home_url(); ?>/course">コース・料金</a>
         <a href="<?php echo home_url(); ?>/home">お知らせ</a>
         <a href="<?php echo home_url(); ?>/archive-voice">お客様の声</a>
         <a href="<?php echo home_url(); ?>/page-contact">ご予約・お問い合わせ</a>

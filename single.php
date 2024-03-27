@@ -108,10 +108,16 @@
             </p>
           </div>
           <div class="page">
-            <a class="forward">&lt;   前の記事へ</a>
+            <a class="forward">
+                <img src="images/information/icon-left.svg">
+                <p>前の記事へ</p>
+            </a>
             <a class="list">お知らせ一覧</a>
             <a class="list-sp">一覧</a>
-            <a class="next">次の記事へ   &gt;</a>
+            <a class="next">
+              <p>次の記事へ</p>
+              <img class="icon-right" src="images/information/icon-left.svg">
+            </a>
           </div>
         </div>
 
