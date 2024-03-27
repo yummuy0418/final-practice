@@ -8,6 +8,26 @@ a {
 }
 
 /* flow */
+.bg-person3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-person3::before {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  right: -8%;
+  background-image: url(images/BGicon_Green.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  z-index: -1;
+  width: 440px;
+  height: 336px;
+  opacity: 25%;
+}
+
 .flow {
   width: min(100%, 1200px);
   overflow: hidden;
@@ -27,22 +47,26 @@ a {
 .flow-left{
   width: 38%;
   position: relative;
+  padding-left: 50px;
 }
 
 .flow-left::before {
   position: absolute;
   top: 12%;
-  left: -30%;
+  left: -18%;
   content: 'Flow';
   color: #DAE2C2;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 120px;
   z-index: -1;
+  opacity: 25%;
 }
 .flow-catch ol {
   padding-left: 22px;
   padding-top: 30px;
   line-height: 3;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .flow-right {
@@ -56,7 +80,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .flow {
-    padding-top: 0;
+    padding: 0 16px 70px 16px;
     
   }
 
@@ -72,8 +96,14 @@ a {
 
   .flow-left {
     width: 100%;
-    padding: 30px;
+    padding: 0 16px;
   }
+    
+  .concept-left {
+      width: 100%;
+      padding: 0 16px;
+    }
+  
   .flow-left::before {
     top: -7%;
     left:0;
@@ -85,25 +115,13 @@ a {
     font-size: 100px;
   }
 
-  .bg-person::before {
-    bottom: -30px;
-    right: -35%;
-    background-size: 70%;
+  .bg-person3::before {
+    display: none;
   }
 
   .flow-left::before {
     top: 20%;
   }
-
-
-
-@media screen and (max-width: 767px) {
-
-
-
-
-}
-  
 }
 
 /* ポイント */
@@ -145,15 +163,22 @@ a {
     
 
 @media screen and (max-width: 767px){
+  .point {
+    padding-bottom: 0;  
+  }
 
+  .point-title-under {
+    margin-top: 8px;
+  }
   .point-explain {
-    padding: 20px 25px;;
+    padding: 8px 16px;;
     font-size: 18px;
   }
 
   .point-photo {
     flex-direction: column;
     align-items: center;
+    padding: 25px 16px;
   }
 }
 

@@ -5,12 +5,21 @@
   padding: 70px 100px;
 }
 
+.customer-title {
+  padding: 10px 0;
+}
+
+.customer-item img {
+  width: 20%;
+}
+
 .customer-item {
   display: flex;
   flex-direction: row;
   gap: 40px;
   width: 100%;
   padding-bottom: 10px;
+  align-items: center;
 }
 
 .title-coment {
@@ -32,15 +41,18 @@
 
 @media screen and (max-width: 767px) {
   .customer {
- padding: 20px;
+ padding: 16px;
   }
   .customer-item {
     flex-direction: column;
     align-items: center;
     gap: 0px;
+    padding: 0;
   }
 
- 
+  .customer-item img {
+    width: 65%;
+  }
 
   .title-coment {
     align-items: center;

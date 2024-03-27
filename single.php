@@ -16,158 +16,119 @@
   <!-- reset.css modern-css-reset -->
   <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="information.css">
+  <link rel="stylesheet" href="information-detail.css">
 </head>
 
 <body>
   <header>
-    <div class="logo">
-    <a href="index.html">
-      <img src="images/logo.png" alt="logo">
-    </a>
-  </div>
+    <div class="common-logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo">
+      </a>
+    </div>
     <!-- PC用ナビゲーション -->
     <nav class="nav-pc">
-      
+
       <a href="index.html">ホーム</a>
       <a href="aboutus.html">当院について</a>
-      <a href="course-price.html">コース・料金</a>
+      <a href="course-prcie.html">コース・料金</a>
       <a href="information.html">お知らせ</a>
       <a href="voice.html">お客様の声</a>
-     
-        <a class="reservation" href="contact.html">ご予約・お問合せ</a>
- 
-      </nav>
+      <a class="reservation" href="contact.html">ご予約・お問合せ</a>
+    </nav>
 
 
     <!-- スマホ用メニューボタン -->
     <img class="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く">
 
-    <!-- スマホ用ナビゲーション ハンバーガー -->
+    <!-- スマホ用ナビゲーション -->
     <div class="nav-sp">
       <img class="close" src="images/button-close.png" alt="ナビゲーションを閉じる">
       <nav>
-      <a class="logo-sp" href="index.html" ><img src="images/logo.png" alt="トップページに戻る"></a>
-      <p class="humberger-menu">メニュー</p>
-      <a class="menu" href="index.html">ホーム</a>
-      <a class="menu" href="aboutus.html">当院について</a>
-      <a class="menu" href="course-price.html">コース・料金</a>
-      <a class="menu" href="information.html">お知らせ</a>
-      <a class="menu" href="voice.html">お客様の声</a>
-      <div class="menu-contact-btn">
-        <a class="menu" href="contact.html">ご予約・お問い合わせ</a>
-      </div>
-    </nav>
+        <a class="logo-sp" href="index.html"><img src="images/logo.png" alt="トップページに戻る"></a>
+        <p class="humberger-menu">メニュー</p>
+        <a class="menu" href="index.html">ホーム</a>
+        <a class="menu" href="aboutus.html">当院について</a>
+        <a class="menu" href="course-price.html">コース・料金</a>
+        <a class="menu" href="information.html">お知らせ</a>
+        <a class="menu" href="voice.html">お客様の声</a>
+        <div class="menu-contact-btn">
+          <a class="menu" href="contact.html">ご予約・お問い合わせ</a>
+        </div>
+      </nav>
       <div class="hamburger-cover"></div>
     </div>
   </header>
   <main>
-  <!-- ヘッダー下メッセージとヒーローイメージ -->
-  <div class="main-vidual">
-    <!-- メッセージ -->
+    <!-- ヘッダー下メッセージとヒーローイメージ -->
+    <div class="main-vidual">
+      <!-- メッセージ -->
       <div class="main-message">
-        <p>About</p>
-        <h1>当院について</h1>
-    </div>
-    <!-- ヒーローイメージ -->
-    <div class="main-vidual-img">
-      <img src="images/about/aboutus-mainvidual.png" alt="施術写真">
-    </div>
-       <!-- スマホ用ヒーローイメージ -->
-       <div class="main-vidual-sp-img">
-      <img src="images/about/aboutus-mainvidual-sp.png" alt="院内写真">
-    </div>
-  </div>
-  
-  
-   <!-- サイトマップ -->
-  <p class="site">ホーム&gt;当院について</p>
-
-  <!-- コンセプト -->
-  <div class="bg-person">
-  <section class="concept">
-    <div class="concept-flex">
-      <div class="concept-left">
-        <div class="common-icon-title">
-          <img src="images/before-title-icon.png" alt="コンセプト">
-          <p>Concept</p>
-        </div>
-        <p class="common-title-under">特長</p>
-        <p class="concept-catch">日々変化する<br>カラダと心を癒す<br>パーソナル<br>トレーナーとして</p>
-        <p class="concept-explain">
-          当院では、問診にてお客様の症状や生活スタイル、ご希望を丁寧にお伺いした上で営業方針を立てていきます。<br><br>また、根本的に症状を改善するために、お客様ご自身で行えるケアやストレッチもお伝えします。<br><br>ご不安な点や疑問点などお気軽にご相談くださいませ。
-        </p>
+        <p>Information</p>
+        <h1>お知らせ</h1>
       </div>
-
-      <div class="concept-right">
-        <img src="images/concept-right-img.png" alt="施術写真">
+      <!-- ヒーローイメージ -->
+      <div class="main-vidual-img">
+        <img src="images/information/information-mainvidual.png" alt="施術写真">
+      </div>
+      <!-- スマホ用ヒーローイメージ -->
+      <div class="main-vidual-sp-img">
+        <img src="images/information/information-mainvidual-sp.png" alt="院内写真">
       </div>
     </div>
-  </section>
-</div>
+    <!-- サイトマップ -->
+    <p class="site">ホーム &gt; お知らせ &gt; <span>お知らせ詳細</span></p>
 
-  <!-- フロー -->
-  <div class="bg-person">
-  <section class="flow">
-    <div class="flow-flex">
-      <div class="flow-left">
-        <div class="common-icon-title">
-          <img src="images/before-title-icon.png" alt="フロー">
-          <p>Flow</p>
-        </div>
-        <p class="common-title-under">施術の流れ</p>
-        <div class="flow-catch">
-          <ol>
-            <li>受付</li>
-            <li>問診票のご記入</li>
-            <li>カウンセリン</li>
-            <li>施術</li>
-            <li>アフターカウンセリング</li>
-          </ol>
-        </div>
-      </div>
-
-      <div class="flow-right">
-        <img src="images/about/flow-right-img.png" alt="施術写真">
-      </div>
-    </div>
-  </section>
-</div>
-
-  <section class="point">
-    <div class="common-title point-title">
-      <div class="common-title-main">
-        <img class="title-side-left" src="images/title-side.png">
-            <h2>根本改善のポイント</h2>
-            <img class="title-side-right" src="images/title-side.png">
+    <section class="post">
+      <div class="post-container">
+        <div class="post-left">
+          <div class="post-with-photo">
+            <div class="post-title">
+              <h2>投稿記事タイトル</h2>
+              <div class="post-date">
+                <time>2023年2月1日</time>
+                <span>営業日時</span>
+              </div>
+            </div>
+            <img class="post-photo" src="images/information/information1.png">
           </div>
-          
-      </div>
-      <div class="point-title-under">
-        <p class="point-explain">
-          お体の状態や生活習慣、ご要望を丁寧にお伺いします。</p>
-          <p class="point-explain">ご自身でできるケアなども含めて施術方針をお作りします。
-        </p>
-      </div>
-      <div class="point-photo">
-        <div class="point-photo1">
-        <img src="images/about/point1.png">
-        <p>丁寧なカウンセリング</p>
-      </div>
-      <div class="point-photo2">
-        <img src="images/about/point2.png">
-        <p>徹底的分析</p>
-      </div>
-      <div class="point-photo3">
-        <img src="images/about/point3.png">
-        <p>施術計画のご提案</p>
+          <div class="post-detail">
+            <h2>H2見出し</h2>
+            <p>
+              首都圏での新型コロナウィルス感染増加における対応のため金曜日午後は訪問診療のみ行っております。<br>また、スタッフの人数を最低限に減らし診療をしております。<br>患者様にはご迷惑をおかけ致しますが、ご理解ご協力をよろしくお願いいたします。<br><br>首都圏での新型コロナウィルス感染増加における対応のため,診療時間を一部変更いたします。<br>患者様にはご迷惑をおかけ致しますが、ご理解ご協力をよろしくお願いいたします。
+            </p>
+            <h3>H3見出し</h3>
+            <p>
+              首都圏での新型コロナウィルス感染増加における対応のため金曜日午後は訪問診療のみ行っております。<br>また、スタッフの人数を最低限に減らし診療をしております。<br>患者様にはご迷惑をおかけ致しますが、ご理解ご協力をよろしくお願いいたします。<br><br>首都圏での新型コロナウィルス感染増加における対応のため,診療時間を一部変更いたします。<br>患者様にはご迷惑をおかけ致しますが、ご理解ご協力をよろしくお願いいたします。
+            </p>
+            <h4>H4見出し</h4>
+            <p>
+              首都圏での新型コロナウィルス感染増加における対応のため金曜日午後は訪問診療のみ行っております。<br>また、スタッフの人数を最低限に減らし診療をしております。<br>患者様にはご迷惑をおかけ致しますが、ご理解ご協力をよろしくお願いいたします。<br><br>首都圏での新型コロナウィルス感染増加における対応のため,診療時間を一部変更いたします。<br>患者様にはご迷惑をおかけ致しますが、ご理解ご協力をよろしくお願いいたします。
+            </p>
+          </div>
+          <div class="page">
+            <a class="forward">&lt;   前の記事へ</a>
+            <a class="list">お知らせ一覧</a>
+            <a class="list-sp">一覧</a>
+            <a class="next">次の記事へ   &gt;</a>
+          </div>
+        </div>
+
+
+        <div class="post-right">
+          <p class="category">カテゴリ</p>
+          <ul>
+            <li>営業日時</li>
+            <li>キャンペーン</li>
+            <li>その他</li>
+          </ul>
+        </div>
       </div>
 
-      </div>
-  </section>
+    </section>
   </main>
-
-   <!-- フッター -->
+  <!-- フッター -->
   <footer>
     <div class="footer-frame">
       <img src="images/footer-frame.png">
@@ -233,7 +194,7 @@
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-      </div>
+      
       <div class="footer-nav">
 
         <img class="logo" src="images/logo.png">
@@ -247,6 +208,7 @@
           <a href="contact.html">ご予約・お問い合わせ</a>
         </div>
       </div>
+    </div>
     <div class="copyright">
       <small>&copy;2023 SAMURAI整体院</small>
     </div>
@@ -256,6 +218,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
   <script src="main.js"></script>
-
 </body>
+
 </html>

@@ -16,18 +16,30 @@
   .insurance-selfpay {
     display: flex;
     padding: 50px 70px;
-    gap: 30px;
+    gap: 40px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .insurance-selfpay-left {
-    width: 55%;
     padding-left: 10px;
     padding-top: 10px;
+    width: 38%;
   }
 
 
   .insurance-selfpay-explain {
     font-size: 16px;
+    padding-top: 15px;
+  }
+
+  .insurance-selfpay-explain p {
+    padding-bottom: 5px;
+  }
+
+  .insurance-selfpay-explain li {
+    line-height: 2.1;
   }
 
   .selfpay-price {
@@ -39,16 +51,27 @@
   }
 
   @media screen and (max-width: 767px) {
+    .course-flex {
+      padding: 0 16px;
+    }
+
     .insurance-selfpay{
       flex-direction: column-reverse;
+      padding: 0 16px;
+      gap: 20px;
     }
 
     .insurance-selfpay-left {
       width: 100%;
+      padding: 0 16px 45px 0;
     }
 
     .common-title-under {
       font-size: 18px;
+    }
+
+    .insurance-selfpay-explain {
+      padding-top: 0;
     }
 
     .insurance-selfpay-explain p {

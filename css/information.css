@@ -25,7 +25,6 @@
 
 .post-title h2,
 .post-title h2:visited,
-.post-title h2:hover,
 .post-title h2:active{ 
   color: #000000;
 }
@@ -86,12 +85,17 @@
 
 
 @media screen and (max-width: 767px) {
+
+  .post-with-photo {
+    padding: 20px 0;
+  }
   .post-container {
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 16px;
   }
   .post-left {
     width: 100%;
+    padding-top: 15px;
   }
 
   .post-with-photo {
@@ -107,7 +111,16 @@
     width: 100%;
   }
 
-  .post-right {
-    padding-left: 15px;
+  .post-title h2 {
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  .post-right .category {
+    font-size: 18px;
+  }
+
+  .post-right li{
+    font-size: 18px;
   }
 }
