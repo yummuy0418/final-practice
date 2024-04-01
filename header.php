@@ -2,6 +2,7 @@
 <html lang="ja">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>final-practice aboutus当院について</title>
@@ -16,8 +17,10 @@
 
   <!-- reset.css modern-css-reset -->
   <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/top.css">
+  <?php if(is_front_page()) { ?>
+        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
+        <link href="<?php echo get_template_directory_uri(); ?>/css/top.css" rel="stylesheet ">
+        <?php }?>
   <?php if(is_page('about')) { ?>
         <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
         <link href="<?php echo get_template_directory_uri(); ?>/css/about.css" rel="stylesheet ">
@@ -26,29 +29,37 @@
         <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
         <link href="<?php echo get_template_directory_uri(); ?>/css/course-price.css" rel="stylesheet ">
         <?php }?>
-  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/information.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/informatio-detail.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/voice.css">
+  <?php if(is_home()) { ?>
+        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
+        <link href="<?php echo get_template_directory_uri(); ?>/css/information.css" rel="stylesheet ">
+        <?php }?>
+  <?php if(is_archive()) { ?>
+        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
+        <link href="<?php echo get_template_directory_uri(); ?>/css/voice.css" rel="stylesheet ">
+        <?php }?>
+        
+        <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/informatio-detail.css">
+
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact-thanks.css"> -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact-thanks.css"> --> 
   <?php wp_head(); ?>
 </head>
 
 <body>
   <header>
     <div class="logo">
-      <a href="index.html">
+      <a href="<?php echo home_url(); ?>">
         <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo">
       </a>
     </div>
     <!-- PC用ナビゲーション -->
-    <nav class="nav-pc">
-      <a href="<?php echo home_url(); ?>/front-page">ホーム</a>
+    <nav class="nav-pc top-nav-pc">
+      <a href="<?php echo home_url(); ?>">ホーム</a>
       <a href="<?php echo home_url(); ?>/about">当院について</a>
       <a href="<?php echo home_url(); ?>/course">コース・料金</a>
-      <a href="<?php echo home_url(); ?>/home">お知らせ</a>
-      <a href="<?php echo home_url(); ?>/archive-voice">お客様の声</a>
-      <a class="reservation" href="<?php echo home_url(); ?>/page-contact">ご予約・お問合せ</a>
+      <a href="<?php echo home_url(); ?>/news">お知らせ</a>
+      <a href="<?php echo home_url(); ?>/voice">お客様の声</a>
+      <a class="reservation" href="<?php echo home_url(); ?>/contact">ご予約・お問い合わせ</a>
     </nav>
 
 
@@ -61,13 +72,13 @@
       <nav>
         <a class="logo-sp" href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="トップページに戻る"></a>
         <p class="humberger-menu">メニュー</p>
-        <a class="menu" href="<?php echo home_url(); ?>/front-page">ホーム</a>
+        <a class="menu" href="<?php echo home_url(); ?>">ホーム</a>
         <a class="menu" href="<?php echo home_url(); ?>/about">当院について</a>
         <a class="menu" href="<?php echo home_url(); ?>/course">コース・料金</a>
-        <a class="menu" href="<?php echo home_url(); ?>/home">お知らせ</a>
-        <a class="menu" href="<?php echo home_url(); ?>/archive-voice">お客様の声</a>
+        <a class="menu" href="<?php echo home_url(); ?>/news">お知らせ</a>
+        <a class="menu" href="<?php echo home_url(); ?>/voice">お客様の声</a>
         <div class="menu-contact-btn">
-          <a class="menu" href="<?php echo home_url(); ?>/page-contact">ご予約・お問い合わせ</a>
+          <a class="menu" href="<?php echo home_url(); ?>/contact">ご予約・お問い合わせ</a>
         </div>
       </nav>
       <div class="hamburger-cover"></div>

@@ -18,7 +18,7 @@ a {
   position: absolute;
   bottom: 40px;
   right: -8%;
-  background-image: url(images/BGicon_Green.png);
+  background-image: url(./../images/BGicon_Green.png);
   background-size: 100%;
   background-repeat: no-repeat;
   display: block;

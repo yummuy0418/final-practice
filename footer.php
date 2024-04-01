@@ -66,12 +66,12 @@
       <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png">
 
       <div class="footer-nav-navi">
-        <a href="<?php echo home_url(); ?>/front-page">TOP</a>
+        <a href="<?php echo home_url(); ?>">TOP</a>
         <a href="<?php echo home_url(); ?>/about">当院について</a>
         <a href="<?php echo home_url(); ?>/course">コース・料金</a>
-        <a href="<?php echo home_url(); ?>/home">お知らせ</a>
-        <a href="<?php echo home_url(); ?>/archive-voice">お客様の声</a>
-        <a href="<?php echo home_url(); ?>/page-contact">ご予約・お問い合わせ</a>
+        <a href="<?php echo home_url(); ?>/news">お知らせ</a>
+        <a href="<?php echo home_url(); ?>/voice">お客様の声</a>
+        <a href="<?php echo home_url(); ?>/contact">ご予約・お問い合わせ</a>
       </div>
     </div>
   </div>

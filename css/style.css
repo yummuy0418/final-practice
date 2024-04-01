@@ -170,7 +170,7 @@ header {
 
 .main-message::before {
   content: "";
-  background-image: url(images/_x31_7.png);
+  background-image: url(./../images/_x31_7.png);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -358,7 +358,7 @@ color: #000000;
   position: absolute;
   bottom: -13px;
   right: -8%;
-  background-image: url(images/BGicon_Green.png);
+  background-image: url(./../images/BGicon_Green.png);
   background-size: 100%;
   background-repeat: no-repeat;
   display: block;
@@ -494,7 +494,7 @@ color: #000000;
   position: absolute;
   bottom: 40px;
   right: 0;
-  background-image: url(images/BG_course.png);
+  background-image: url(./../images/BG_course.png);
   background-size: 100%;
   background-repeat: no-repeat;
   display: block;
@@ -638,7 +638,7 @@ color: #000000;
 
 .voice-title::before {
   content: "";
-  background-image: url(images/voice-circle.png);
+  background-image: url(./../images/voice-circle.png);
   background-size: 100%;
   background-repeat: no-repeat;
   display: block;

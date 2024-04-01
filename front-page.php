@@ -42,20 +42,31 @@
         <p>News</p>
         <p>お知らせ</p>
       </div>
-
+       <?php
+   $args = array(
+       'post_type'      => 'post',
+       'category_name' => 'news',
+       'posts_per_page' => 1,
+   );
+   $posts = get_posts($args);
+?>
+<?php foreach($posts as $post): ?>
+             <?php setup_postdata($post); ?>
       <div class="news-date-info">
         <div class="news-date">
-          <time>2022/12/21</time>
+          <time><?php echo get_the_date('Y/m/d'); ?></time>
           <span>営業日時</span>
         </div>
         <div class="news-info">
-          <a href="information-detail.html">年末年始の営業時間に<span>ついて</span></a>
+          <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </div>
       </div>
     </div>
-    <a href="information.html">→お知らせ一覧へ</a>
+    <a href="<?php echo home_url(); ?>/news">→お知らせ一覧へ</a>
   </section>
- 
+  <?php endforeach; ?>
+             <!-- 使用した投稿データをリセット -->
+             <?php wp_reset_postdata(); ?>
 
 
   <div class="bg-person">
@@ -71,7 +82,7 @@
           <p class="concept-explain">
             当院では、問診にてお客様の症状や生活スタイル、ご希望を丁寧にお伺いした上で営業方針を立てていきます。<br><br>また、根本的に症状を改善するために、お客様ご自身で行えるケアやストレッチもお伝えします。<br><br>ご不安な点や疑問点などお気軽にご相談くださいませ。
           </p>
-          <a class="concept-btn" href="aboutus.html">→当院について</a>
+          <a class="concept-btn" href="<?php echo home_url(); ?>/about">→当院について</a>
         </div>
 
         <div class="concept-right">
@@ -126,7 +137,7 @@
           </div>
         </div>
       
-          <a class="course-btn" href="course-price.html">→コース・料金詳細へ</a>
+          <a class="course-btn" href="<?php echo home_url(); ?>/course-price.html">→コース・料金詳細へ</a>
       
       </div>
 
@@ -165,7 +176,7 @@
       </div>
     </div>
 
-      <a class="voice-btn" href="voice.html">→お客様の声一覧へ</a>
+      <a class="voice-btn" href="<?php echo home_url(); ?>/voice.html">→お客様の声一覧へ</a>
    
   </section>
   </main>
