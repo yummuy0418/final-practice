@@ -27,7 +27,7 @@
         <div class="title-coment">
           <p class="customer-title"><?php the_title(); ?></p>
           <p class="customer-coment">
-          <?php echo wp_trim_words(get_the_content(), 50, '...'); ?></p>
+          <?php echo wp_trim_words(get_the_content(), 100, '...'); ?></p>
         </div>
       </div>
       <?php endwhile; ?>

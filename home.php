@@ -37,7 +37,14 @@
           </a>
           <?php endwhile; ?>
           <?php endif; ?>
-        <?php get_sidebar(); ?>
+          <div class="post-right">
+          <p class="category">カテゴリ</p>
+          <ul>
+            <li>営業日時</li>
+            <li>キャンペーン</li>
+            <li>その他</li>
+          </ul>
+        </div>
       
       <ul class="pager">
         <li><a class="active">1</a></li>
@@ -46,10 +53,8 @@
         <li><span>•••</span></li>
         <li><a>6</a></li>
       </ul>
-      </div>
 
-  
-<?php the_posts_pagination(
+      <?php the_posts_pagination(
   array(
       'mid_size'      => 2, // 現在ページの左右に表示するページ番号の数
       'prev_next'     => true, // 「前へ」「次へ」のリンクを表示する場合はtrue
@@ -59,6 +64,7 @@
   )
 ); ?>
 
+</div>
     </section>
   </main>
   <?php get_footer(); ?>

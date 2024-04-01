@@ -158,22 +158,24 @@
         <p>痛みの改善に加えて自分で予防<span>もできるようになりました</span></p>
       </div>
     </div>
+
+    <?php
+         $args = array(
+           'post_type'      => 'voice',
+           'posts_per_page' => 3,
+         );
+         $posts = get_posts($args);
+         ?>
     <div class="customer">
+    <?php foreach ($posts as $post) : ?>
+       <?php setup_postdata($post); ?>
       <div class="customer-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/voice-customer1.jpg">
-        <p class="customer-title">S・K様　30代女性</p>
-        <p class="customer-coment">1ヶ月で腰の痛みが軽減しました。自分で自宅でできるケアも教えていただき、お任せしてよかったです。</p>
+      <?php the_post_thumbnail();?>
+        <p class="customer-title"><?php the_title(); ?></p>
+        <p class="customer-coment"><?php echo wp_trim_words(get_the_content()); ?></p>
       </div>
-      <div class="customer-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/voice-customer2.jpg">
-        <p class="customer-title">T・M様　40代男性</p>
-        <p class="customer-coment">マラソンで右膝が痛むので、施術を受けています。なぜ痛みが生じるのかを身体の仕組みから教えていただき、普段の練習メニューも工夫できています。</p>
-      </div>
-      <div class="customer-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/voice-customer3.jpg">
-        <p class="customer-title">S・T様　60代女性</p>
-        <p class="customer-coment">転倒して足を骨折したのをきっかけに、痛みの軽減と筋肉の衰えを防ぐための方針を立てていただいています。今は毎日元気に近所を散歩できています。</p>
-      </div>
+      <?php endforeach; ?>
+         <?php wp_reset_postdata(); ?>
     </div>
 
       <a class="voice-btn" href="<?php echo home_url(); ?>/voice.html">→お客様の声一覧へ</a>
