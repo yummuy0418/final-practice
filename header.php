@@ -37,11 +37,17 @@
         <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
         <link href="<?php echo get_template_directory_uri(); ?>/css/voice.css" rel="stylesheet ">
         <?php }?>
-        
-        <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/informatio-detail.css">
-
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact-thanks.css"> --> 
+  <?php if(is_single()) { ?>
+        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/informatio.css">  
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/informatio-detail.css">
+        <?php }?>
+    <?php if(is_page('contact')) { ?>
+        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">   
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact.css">
+        <?php }?>
+  
+        <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact-thanks.css"> -->  
   <?php wp_head(); ?>
 </head>
 
