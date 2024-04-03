@@ -9,4 +9,4 @@ add_action('wp_enqueue_scripts', 'remove_default_jquery');
     }
     return $args;
   }
-add_filter('register_post_type_args', 'post_has_archive, 10'2);
+add_filter('register_post_type_args', 'post_has_archive, 5'2);

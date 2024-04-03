@@ -674,6 +674,7 @@ color: #000000;
   margin: 0 auto;
   border-radius: 50%;
   width: 90%;
+  height: auto;
 }
 
 .customer-title {
@@ -761,7 +762,7 @@ color: #000000;
 }
 
 /* ペイジャー */
-.pager {
+.pagination {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -770,18 +771,22 @@ color: #000000;
   color: #468459;
 }
 
-.pager li {
+.page-numbers {
   list-style-type: none;
   font-size: 16px;
+  width: 24px;
+  height: 24px;
+  display: block;
+  color: #468459;
 }
 
-.pager .active {
+.pagination .current {
   background-color: #468459;
   color: #ffffff;
   
 }
 
-.pager a {
+.pagi-numbers a {
   width: 24px;
   height: 24px;
   display: block;

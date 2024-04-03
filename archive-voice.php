@@ -19,9 +19,16 @@
     <!-- サイトマップ -->
     <p class="site">ホーム&gt;お客様の声</p>
     
+    <?php
+               $args = array(
+                   'post_type' => 'voice',
+                   'posts_per_page' => 5,
+               );
+               $posts = get_posts($args);
+               ?>
     <section class="customer">
-    <?php if (have_posts()) : ?>
-               <?php while (have_posts()) : the_post() ?>
+    <?php foreach($posts as $post): ?>
+    <?php setup_postdata($post); ?>
       <div class="customer-item">
       <?php the_post_thumbnail(); ?>
         <div class="title-coment">
@@ -29,18 +36,22 @@
           <p class="customer-coment">
           <?php echo wp_trim_words(get_the_content(), 100, '...'); ?></p>
         </div>
-      </div>
-      <?php endwhile; ?>
-             <?php endif; ?>
+        </div>
+        <?php endforeach; ?>
+        <?php wp_reset_postdata(); ?>
+      
     </section>
     
-    <ul class="pager">
-      <li><a class="active">1</a></li>
-      <li><a>2</a></li>
-      <li><a>3</a></li>
-      <li><span>•••</span></li>
-      <li><a>6</a></li>
-    </ul>
+    <div class="pagination">
+      <?php
+  echo paginate_links(
+    array(
+      'mid_size' => 1,
+      'prev_next' => false,
+    )
+  );
+?>
+</div>
   </main>
   
-  <?php get_footer(); ?>
+  <?php get_footer(); 

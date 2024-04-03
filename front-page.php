@@ -45,7 +45,6 @@
        <?php
    $args = array(
        'post_type'      => 'post',
-       'category_name' => 'news',
        'posts_per_page' => 1,
    );
    $posts = get_posts($args);
@@ -55,6 +54,7 @@
       <div class="news-date-info">
         <div class="news-date">
           <time><?php echo get_the_date('Y/m/d'); ?></time>
+          <!-- カテゴリー名出力 -->
           <span>営業日時</span>
         </div>
         <div class="news-info">
@@ -182,5 +182,5 @@
    
   </section>
   </main>
-  <?php get_footer();
+  <?php get_footer(); ?>
   

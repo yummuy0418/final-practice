@@ -45,24 +45,17 @@
             <li>その他</li>
           </ul>
         </div>
-      
-      <ul class="pager">
-        <li><a class="active">1</a></li>
-        <li><a>2</a></li>
-        <li><a>3</a></li>
-        <li><span>•••</span></li>
-        <li><a>6</a></li>
-      </ul>
-
-      <?php the_posts_pagination(
-  array(
-      'mid_size'      => 2, // 現在ページの左右に表示するページ番号の数
-      'prev_next'     => true, // 「前へ」「次へ」のリンクを表示する場合はtrue
-      'prev_text'     => ('<'), // 「前へ」リンクのテキスト
-      'next_text'     => ('>'), // 「次へ」リンクのテキスト
-      'type'          => 'list', // 戻り値の指定 (plain/list)
-  )
-); ?>
+    
+      <div class="pagination">
+      <?php
+  echo paginate_links(
+    array(
+      'mid_size' => 1,
+      'prev_next' => false,
+    )
+  );
+?>
+</div>
 
 </div>
     </section>
