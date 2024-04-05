@@ -34,7 +34,12 @@
 
 .post-photo {
   border-radius: 16px;
-  width: 40%;
+  width: 45%;
+  aspect-ratio: 8/5;
+}
+
+.post-title {
+  width: 45%;
 }
 
 .post-title h2{

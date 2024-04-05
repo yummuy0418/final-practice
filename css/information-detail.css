@@ -22,6 +22,7 @@
 
 .post-title h2 {
   color: #0C4324;
+  font-size: 32px;
 }
 .post-date {
   width: 100%;
@@ -59,7 +60,6 @@
 .post-detail p{
   font-size: 16px;
 }
-
 
 
 .page a {

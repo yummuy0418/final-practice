@@ -50,6 +50,10 @@
         <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact-thanks.css"> 
         <?php }?>
+    <?php if(is_category()) { ?> 
+      <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/information.css">
+        <?php }?>
   
     <?php wp_head(); ?>
 </head>

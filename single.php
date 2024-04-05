@@ -39,7 +39,7 @@
                 <span><?php echo $catname; ?></span>
               </div>
             </div>
-            <img class="post-photo" src="images/information/information1.png">
+            <img class="post-photo" src="<?php the_post_thumbnail_url('thumbnail'); ?>" />
           </div>
           <div class="post-detail">
             <h2><?php the_title(); ?></h2>
