@@ -31,50 +31,7 @@
   <p class="contact-form-remark">※2
     営業日以内にご返信いたします。
   </p>
-  <form action="contact-thanks.html" method="post">
-    <div class="form-item">
-    <label for="name">氏名（必須）</label> 
-    <input type="text" class="blank" placeholder="侍　太郎">
-  </div>
-    
-    <div class="form-item">
-    <label for="rubi">フリガナ（必須）</label> 
-    <input type="text" class="blank" placeholder="サムライ　タロウ">
-  </div>
-   
-    <div class="form-item">
-    <label for="number">電話番号（必須）　半角</label> 
-    <input type="number" class="blank" placeholder="12345678">
-  </div>
-    
-    <div class="form-item">
-    <label for="email">メールアドレス（必須）　半角英数字</label> 
-    <input type="email" class="blank" placeholder="samurai-chiropractic@example.com">
-   </div>
-   
-   <div class="form-item">
-    <label for="date">ご予約希望日</label>
-    <input type="text" class="blank" placeholder="例）2023年3月1日">
-  </div>
-   
-  <div class="form-item">
-    <label for="selectbox">お悩み（必須）</label> 
-    <select type="selectbox" class="blank">
-      <option value="" selected>お悩みを選択してください</option>
-      <option value="youtuu">腰痛</option>
-      <option value="katakori">肩こり</option>
-    </select>
-    </div>
-    
-    <div class="form-item">
-    <label for="message">お問い合わせ内容</label> 
-    <textarea name="message" class="blank-textarea" placeholder="できるだけ詳しいお問い合わせ内容を記入してください"></textarea>
-    </div>
-
-    <input class="submit" type="submit" value="送信">
-
-
-  </form>
+  <?php the_content(); ?>
 </div>
 
 </div>

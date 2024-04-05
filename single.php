@@ -20,59 +20,59 @@
     <!-- サイトマップ -->
     <p class="site">ホーム &gt; お知らせ &gt; <span>お知らせ詳細</span></p>
 
+    <?php if(have_posts()) :?>
+  <?php while (have_posts()) : the_post() ; ?>
     <section class="post">
       <div class="post-container">
         <div class="post-left">
           <div class="post-with-photo">
             <div class="post-title">
-              <h2>投稿記事タイトル</h2>
+              <h2><?php the_title(); ?></h2>
               <div class="post-date">
-                <time>2023年2月1日</time>
-                <span>営業日時</span>
+                <time><?php echo get_the_date('Y年m月d日'); ?></time>
+                
+                <?php
+             $cat = get_the_category();
+             $catslug = $cat[0]->slug;
+             $catname = $cat[0]->cat_name;
+           ?>
+                <span><?php echo $catname; ?></span>
               </div>
             </div>
             <img class="post-photo" src="images/information/information1.png">
           </div>
           <div class="post-detail">
-            <h2>H2見出し</h2>
+            <h2><?php the_title(); ?></h2>
             <p>
-              首都圏での新型コロナウィルス感染増加における対応のため金曜日午後は訪問診療のみ行っております。<br>また、スタッフの人数を最低限に減らし診療をしております。<br>患者様にはご迷惑をおかけ致しますが、ご理解ご協力をよろしくお願いいたします。<br><br>首都圏での新型コロナウィルス感染増加における対応のため,診療時間を一部変更いたします。<br>患者様にはご迷惑をおかけ致しますが、ご理解ご協力をよろしくお願いいたします。
+            <?php echo get_the_content(); ?>
             </p>
-            <h3>H3見出し</h3>
+            <h3><?php the_title(); ?></h3>
             <p>
-              首都圏での新型コロナウィルス感染増加における対応のため金曜日午後は訪問診療のみ行っております。<br>また、スタッフの人数を最低限に減らし診療をしております。<br>患者様にはご迷惑をおかけ致しますが、ご理解ご協力をよろしくお願いいたします。<br><br>首都圏での新型コロナウィルス感染増加における対応のため,診療時間を一部変更いたします。<br>患者様にはご迷惑をおかけ致しますが、ご理解ご協力をよろしくお願いいたします。
+            <?php echo get_the_content(); ?>
             </p>
-            <h4>H4見出し</h4>
+            <h4><?php the_title(); ?></h4>
             <p>
-              首都圏での新型コロナウィルス感染増加における対応のため金曜日午後は訪問診療のみ行っております。<br>また、スタッフの人数を最低限に減らし診療をしております。<br>患者様にはご迷惑をおかけ致しますが、ご理解ご協力をよろしくお願いいたします。<br><br>首都圏での新型コロナウィルス感染増加における対応のため,診療時間を一部変更いたします。<br>患者様にはご迷惑をおかけ致しますが、ご理解ご協力をよろしくお願いいたします。
+            <?php echo get_the_content(); ?>
             </p>
           </div>
+          
           <div class="page">
-            <a class="forward">
-                <img src="images/information/icon-left.svg">
-                <p>前の記事へ</p>
+            
+            <?php previous_post_link('%link', '＜　前の記事へ'); ?>
             </a>
-            <a class="list">お知らせ一覧</a>
-            <a class="list-sp">一覧</a>
-            <a class="next">
-              <p>次の記事へ</p>
-              <img class="icon-right" src="images/information/icon-left.svg">
+            <a class="list" href="<?php echo home_url(); ?>/news">お知らせ一覧</a>
+            <a class="list-sp" href="<?php echo home_url(); ?>/news">一覧</a>
+            <?php next_post_link('%link', '次の記事へ　＞'); ?>
             </a>
           </div>
         </div>
 
-
-        <div class="post-right">
-          <p class="category">カテゴリ</p>
-          <ul>
-            <li>営業日時</li>
-            <li>キャンペーン</li>
-            <li>その他</li>
-          </ul>
-        </div>
+        <?php get_sidebar(); ?>
+        
       </div>
 
     </section>
   </main>
-  
+  <?php endwhile; ?>
+    <?php endif; ?>
   <?php get_footer( ); ?>

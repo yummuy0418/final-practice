@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-  <main>
+  
+<main>
     <!-- ヘッダー下メッセージとヒーローイメージ -->
     <div class="main-vidual">
       <!-- メッセージ -->
@@ -26,25 +27,25 @@
         <?php if (have_posts()) : ?>
         <?php while(have_posts()) : the_post(); ?>
           <a href="<?php the_permalink(); ?>" class="post-with-photo">
-            <img class="post-photo" src="<?php echo get_template_directory_uri(); ?>/images/information/information1.png">
+      <?php
+      if(has_post_thumbnail()):
+         the_post_thumbnail();
+      endif;
+      ?>
+           <?php the_post_thumbnail();?>
             <div class="post-title">
               <h2><?php the_title(); ?></h2>
               <div class="post-date">
                 <time><?php echo get_post_time('Y年m月d日'); ?></time>
-                <span>営業日時</span>
+                <span><?php echo get_the_category()[0]->name; ?></span>
               </div>
             </div>
           </a>
           <?php endwhile; ?>
           <?php endif; ?>
-          <div class="post-right">
-          <p class="category">カテゴリ</p>
-          <ul>
-            <li>営業日時</li>
-            <li>キャンペーン</li>
-            <li>その他</li>
-          </ul>
-        </div>
+          </div>
+      
+          <?php get_sidebar(); ?>    
     
       <div class="pagination">
       <?php
@@ -57,7 +58,7 @@
 ?>
 </div>
 
-</div>
+
     </section>
   </main>
   <?php get_footer(); ?>

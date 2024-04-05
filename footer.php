@@ -52,7 +52,7 @@
 
 
         <div class="footer-btn">
-          <a href="contact.html">ご予約・お問い合わせはこちらから</a>
+          <a href="<?php echo home_url(); ?>/contact">ご予約・お問い合わせはこちらから</a>
         </div>
       </div>
 

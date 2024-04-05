@@ -54,8 +54,7 @@
       <div class="news-date-info">
         <div class="news-date">
           <time><?php echo get_the_date('Y/m/d'); ?></time>
-          <!-- カテゴリー名出力 -->
-          <span>営業日時</span>
+          <span><?php echo get_the_category()[0]->name; ?></span>
         </div>
         <div class="news-info">
           <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -65,8 +64,7 @@
     <a href="<?php echo home_url(); ?>/news">→お知らせ一覧へ</a>
   </section>
   <?php endforeach; ?>
-             <!-- 使用した投稿データをリセット -->
-             <?php wp_reset_postdata(); ?>
+    <?php wp_reset_postdata(); ?>
 
 
   <div class="bg-person">
