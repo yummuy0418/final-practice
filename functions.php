@@ -1,5 +1,5 @@
 add_action('wp_enqueue_scripts', 'remove_default_jquery');
- add_theme_support('post-thumbnails','post','page');
+ add_theme_support('post-thumbnails');
 
  function post_has_archive($args, $post_type)
   {
