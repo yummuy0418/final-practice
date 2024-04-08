@@ -17,7 +17,7 @@
     </div>
   </div>
    <!-- サイトマップ -->
-   <p class="site">ホーム &gt; <span>ご予約・お問い合わせ</span></p>
+   <?php get_template_part('breadcrumb'); ?>
 <div class="contact-container">
 <div class="contact-tel">
   <p>お電話でのご予約・お問い合わせ</p>

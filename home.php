@@ -19,7 +19,7 @@
       </div>
     </div>
     <!-- サイトマップ -->
-    <p class="site">ホーム &gt; <span>お知らせ</span></p>
+    <?php get_template_part('breadcrumb'); ?>
 
     <section class="post">
       <div class="post-container">

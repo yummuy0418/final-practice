@@ -17,7 +17,7 @@
       </div>
     </div>
     <!-- サイトマップ -->
-    <p class="site">ホーム&gt;お客様の声</p>
+    <?php get_template_part('breadcrumb'); ?>
     
     <?php
                $args = array(

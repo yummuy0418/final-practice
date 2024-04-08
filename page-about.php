@@ -19,8 +19,9 @@
   
   
    <!-- サイトマップ -->
-  <p class="site">ホーム &gt; <span>当院について</span></p>
+   <?php get_template_part('breadcrumb'); ?>
 
+</div>
   <!-- コンセプト -->
   <div class="bg-person">
   <section class="concept">

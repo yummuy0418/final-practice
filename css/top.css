@@ -284,6 +284,12 @@ ul {
   font-size: 14px;
 }
 
+.news a:hover,
+.news a:visited,
+.news a:hover {
+  color: #000000;
+}
+
 @media screen and (max-width: 767px) {
   .news {
     flex-direction: column;

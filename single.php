@@ -18,7 +18,7 @@
       </div>
     </div>
     <!-- サイトマップ -->
-    <p class="site">ホーム &gt; お知らせ &gt; <span>お知らせ詳細</span></p>
+    <?php get_template_part('breadcrumb'); ?>
 
     <?php if(have_posts()) :?>
   <?php while (have_posts()) : the_post() ; ?>

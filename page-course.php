@@ -17,7 +17,7 @@
       </div>
     </div>
     <!-- サイトマップ -->
-    <p class="site">ホーム &gt; <span>コース・料金</span></p>
+    <?php get_template_part('breadcrumb'); ?>
     <!-- コース・料金 -->
     <section class="course-price">
       <div class="course-frame">

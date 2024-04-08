@@ -184,6 +184,8 @@ header {
 @media screen and (max-width: 767px) {
   .main-message {
     top: 75%;
+    left: 4%;
+    padding-bottom: 0;
   }
 }
 
@@ -222,26 +224,27 @@ header {
 }
 
 /* サイトマップ */
-.site {
+.breadcrumbs {
   padding-left: 13%;
   padding-top: 20px;
   font-size: 14px;
 }
 
-.site span {
+.breadcrumbs span:nth-child(2){
   color: #0C4324;
 }
 
-.news a:link, 
-.news a:visited,
-.news a:hover,
-.news a:active{
+.breadcrumbs a:link, 
+.breadcrumbs a:visited,
+.breadcrumbs a:hover,
+.breadcrumbs a:active{
 color: #000000;
 }
 
 @media screen and (max-width: 767px) {
-  .site {
-    padding-left: 20px;
+  .breadcrumbs {
+    padding-left: 16px;
+    padding-top: 0;
   }
 }
 

@@ -17,7 +17,7 @@
       </div>
     </div>
     <!-- サイトマップ -->
-    <p class="site">ホーム &gt; <span>ご予約・お問い合わせ</span></p>
+    <?php get_template_part('breadcrumb'); ?>
     <div class="border">
       <p class="submit">お問い合わせ内容を送信しました</p>
       <p class="thanks">ありがとうございます。2営業日以内にご返信いたします。</p>
