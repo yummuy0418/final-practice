@@ -9,26 +9,26 @@
       </div>
       <!-- ヒーローイメージ -->
       <div class="main-vidual-img">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/price/price-mainvidual.png" alt="施術写真">
+        <img src="<?php echo esc_url( get_template_directory_uri() .'/images/price/price-mainvidual.png'); ?>" alt="施術写真">
       </div>
       <!-- スマホ用ヒーローイメージ -->
       <div class="main-vidual-sp-img">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/price/price-mainvidual-sp.png" alt="院内写真">
+        <img src="<?php echo esc_url( get_template_directory_uri() .'/images/price/price-mainvidual-sp.png'); ?>" alt="院内写真">
       </div>
     </div>
     <!-- サイトマップ -->
-    <?php get_template_part('breadcrumb'); ?>
+    <?php echo esc_html ( get_template_part('breadcrumb')); ?>
     <!-- コース・料金 -->
     <section class="course-price">
       <div class="course-frame">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/footer-frame.png">
+        <img src="<?php echo esc_url( get_template_directory_uri() .'/images/footer-frame.png'); ?>">
       </div>
       <div class="course-content">
         <div class="common-title">
           <div class="common-title-main">
-            <img class="title-side-left" src="<?php echo get_template_directory_uri(); ?>/images/title-side.png">
+            <img class="title-side-left" src="<?php echo esc_url( get_template_directory_uri() .'/images/title-side.png'); ?>">
             <h2>コース・料金</h2>
-            <img class="title-side-right" src="<?php echo get_template_directory_uri(); ?>/images/title-side.png">
+            <img class="title-side-right" src="<?php echo esc_url( get_template_directory_uri() .'/images/title-side.png'); ?>">
           </div>
           <p>
             当院では保険診療、自費診療<span>ともにご対応しております</span>
@@ -37,7 +37,7 @@
 
         <div class="course-flex">
           <div class="course-left">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/course-img1.jpg" alt="施術ベッド">
+            <img src="<?php echo esc_url( get_template_directory_uri() .'/images/course-img1.jpg'); ?>" alt="施術ベッド">
             <p class="course-title">保険診療</p>
             <ul class="course-item">
               <li>骨折・打撲・捻挫・脱臼</li>
@@ -48,7 +48,7 @@
 
 
           <div class="course-right">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/course-img2.jpg" alt="施術ベッド">
+            <img src="<?php echo esc_url( get_template_directory_uri() .'/images/course-img2.jpg'); ?>" alt="施術ベッド">
             <p class="course-title">自費診療</p>
             <ul class="course-item">
               <li>腰痛・肩こり</li>
@@ -64,7 +64,7 @@
     <section class="insurance-selfpay">
       <div class="insurance-selfpay-left">
         <div class="common-icon-title">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/before-title-icon.png">
+          <img src="<?php echo esc_url( get_template_directory_uri() .'/images/before-title-icon.png'); ?>">
           <p>Insurance</p>
         </div>
         <p class="common-title-under">保険診療</p>
@@ -78,7 +78,7 @@
         </div>
       </div>
       <div class="insurance-selfpay-right">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/price/price1.png">
+        <img src="<?php echo esc_url( get_template_directory_uri() .'/images/price/price1.png'); ?>">
       </div>
     </section>
 
@@ -86,7 +86,7 @@
     <section class="insurance-selfpay">
       <div class="insurance-selfpay-left">
         <div class="common-icon-title">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/before-title-icon.png">
+          <img src="<?php echo esc_url( get_template_directory_uri() .'/images/before-title-icon.png'); ?>">
           <p>Self-pay</p>
         </div>
         <p class="common-title-under">自費診療</p>
@@ -104,7 +104,7 @@
         </p>
       </div>
       <div class="insurance-selfpay-right">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/price/price2.png">
+        <img src="<?php echo esc_url( get_template_directory_uri() .'/images/price/price2.png'); ?>">
       </div>
     </section>
 

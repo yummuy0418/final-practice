@@ -1,13 +1,13 @@
 <footer>
   <div class="footer-frame">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/footer-frame.png">
+    <img src="<?php echo esc_url( get_template_directory_uri() .'/images/footer-frame.png'); ?>">
   </div>
   <div class="footer-content">
     <div class="common-title footer-title">
       <div class="common-title-main">
-        <img class="title-side-left" src="<?php echo get_template_directory_uri(); ?>/images/title-side.png">
+        <img class="title-side-left" src="<?php echo esc_url( get_template_directory_uri() .'/images/title-side.png'); ?>">
         <h2>ご気軽にご来院ください</h2>
-        <img class="title-side-right" src="<?php echo get_template_directory_uri(); ?>/images/title-side.png">
+        <img class="title-side-right" src="<?php echo esc_url( get_template_directory_uri() .'/images/title-side.png'); ?>">
       </div>
     </div>
     <div class="footer-flex">
@@ -52,7 +52,7 @@
 
 
         <div class="footer-btn">
-          <a href="<?php echo home_url(); ?>/contact">ご予約・お問い合わせはこちらから</a>
+          <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">ご予約・お問い合わせはこちらから</a>
         </div>
       </div>
 
@@ -63,15 +63,15 @@
 
     <div class="footer-nav">
 
-      <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png">
+      <img class="logo" src="<?php echo esc_url( get_template_directory_uri() .'/images/logo.png'); ?>">
 
       <div class="footer-nav-navi">
-        <a href="<?php echo home_url(); ?>">TOP</a>
-        <a href="<?php echo home_url(); ?>/about">当院について</a>
-        <a href="<?php echo home_url(); ?>/course">コース・料金</a>
-        <a href="<?php echo home_url(); ?>/news">お知らせ</a>
-        <a href="<?php echo home_url(); ?>/voice">お客様の声</a>
-        <a href="<?php echo home_url(); ?>/contact">ご予約・お問い合わせ</a>
+        <a href="<?php  echo esc_url(home_url());?>">TOP</a>
+        <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">当院について</a>
+        <a href="<?php echo esc_url( home_url( '/course' ) ); ?>">コース・料金</a>
+        <a href="<?php echo esc_url( home_url( '/news' ) ); ?>">お知らせ</a>
+        <a href="<?php echo esc_url( home_url( '/voice' ) ); ?>">お客様の声</a>
+        <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">ご予約・お問い合わせ</a>
       </div>
     </div>
   </div>
@@ -80,7 +80,7 @@
   </div>
 </footer>
 
-<a href="#" id="top-page"><img src="<?php echo get_template_directory_uri(); ?>/images/return-btn.png"></a>
+<a href="#" id="top-page"><img src="<?php echo esc_url( get_template_directory_uri() .'/images/return-btn.png'); ?>"></a>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

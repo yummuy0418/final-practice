@@ -9,15 +9,15 @@
   </div>
     <!-- ヒーローイメージ -->
     <div class="main-vidual-img">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/contact/contact-mainvidual.png" alt="施術写真">
+      <img src="<?php echo esc_url( get_template_directory_uri() .'/images/contact/contact-mainvidual.png'); ?>" alt="施術写真">
     </div>
        <!-- スマホ用ヒーローイメージ -->
        <div class="main-vidual-sp-img">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/contact/contact-mainvidual-sp.png" alt="院内写真">
+      <img src="<?php echo esc_url( get_template_directory_uri() .'/images/contact/contact-mainvidual-sp.png'); ?>" alt="院内写真">
     </div>
   </div>
    <!-- サイトマップ -->
-   <?php get_template_part('breadcrumb'); ?>
+   <?php echo esc_html ( get_template_part('breadcrumb')); ?>
 <div class="contact-container">
 <div class="contact-tel">
   <p>お電話でのご予約・お問い合わせ</p>

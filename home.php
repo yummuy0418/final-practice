@@ -11,15 +11,15 @@
       </div>
       <!-- ヒーローイメージ -->
       <div class="main-vidual-img">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/information/information-mainvidual.png" alt="施術写真">
+        <img src="<?php echo esc_url( get_template_directory_uri() .'/images/information/information-mainvidual.png'); ?>" alt="施術写真">
       </div>
       <!-- スマホ用ヒーローイメージ -->
       <div class="main-vidual-sp-img">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/information/information-mainvidual-sp.png" alt="院内写真">
+        <img src="<?php echo esc_url( get_template_directory_uri() .'/images/information/information-mainvidual-sp.png'); ?>" alt="院内写真">
       </div>
     </div>
     <!-- サイトマップ -->
-    <?php get_template_part('breadcrumb'); ?>
+    <?php echo esc_html (get_template_part('breadcrumb')); ?>
 
     <section class="post">
       <div class="post-container">

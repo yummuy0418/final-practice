@@ -9,15 +9,15 @@
       </div>
       <!-- ヒーローイメージ -->
       <div class="main-vidual-img">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/contact/contact-mainvidual.png" alt="施術写真">
+        <img src="<?php echo esc_url( get_template_directory_uri() .'/images/contact/contact-mainvidual.png'); ?>" alt="施術写真">
       </div>
       <!-- スマホ用ヒーローイメージ -->
       <div class="main-vidual-sp-img">
-        <img src="images/contact/contact-mainvidual-sp.png" alt="院内写真">
+        <img src="<?php echo esc_url( get_template_directory_uri() .'/images/contact/contact-mainvidual-sp.png'); ?>" alt="院内写真">
       </div>
     </div>
     <!-- サイトマップ -->
-    <?php get_template_part('breadcrumb'); ?>
+    <?php echo esc_html ( get_template_part('breadcrumb')); ?>
     <div class="border">
       <p class="submit">お問い合わせ内容を送信しました</p>
       <p class="thanks">ありがとうございます。2営業日以内にご返信いたします。</p>
