@@ -82,19 +82,21 @@
 
 <a href="#" id="top-page"><img src="<?php echo esc_url( get_template_directory_uri() .'/images/return-btn.png'); ?>"></a>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/main.js"></script>
+<?php wp_footer(); ?>
+<?php if (is_front_page()) { ?>
 <script>
+  jQuery(document).ready(function($) {
   $('.slider').slick({
     autoplay: true,
     dots: false,
     fade: true,
-    speed: 1500,
+    speed: 1000,
     arrows: false,
   });
+});
 </script>
-<?php wp_footer(); ?>
+<?php } ?>
+
 </body>
 
 </html>

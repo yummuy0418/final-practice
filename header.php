@@ -10,50 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Noto+Sans+JP&family=Noto+Serif+JP&family=Shippori+Mincho&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
-
-  <!-- reset.css modern-css-reset -->
-  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
-  <?php if(is_front_page()) { ?>
-        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
-        <link href="<?php echo get_template_directory_uri(); ?>/css/top.css" rel="stylesheet ">
-        <?php }?>
-  <?php if(is_page('about')) { ?>
-        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
-        <link href="<?php echo get_template_directory_uri(); ?>/css/about.css" rel="stylesheet ">
-        <?php }?>
-  <?php if(is_page('course')) { ?>
-        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
-        <link href="<?php echo get_template_directory_uri(); ?>/css/course-price.css" rel="stylesheet ">
-        <?php }?>
-  <?php if(is_home()) { ?>
-        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
-        <link href="<?php echo get_template_directory_uri(); ?>/css/information.css" rel="stylesheet ">
-        <?php }?>
-  <?php if(is_archive()) { ?>
-        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
-        <link href="<?php echo get_template_directory_uri(); ?>/css/voice.css" rel="stylesheet ">
-        <?php }?>
-  <?php if(is_single()) { ?>
-        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/information.css">  
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/information-detail.css">
-        <?php }?>
-    <?php if(is_page('contact')) { ?>
-        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">   
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact.css">
-        <?php }?>
-    <?php if(is_page('contact-thanks')) { ?>
-        <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact-thanks.css"> 
-        <?php }?>
-    <?php if(is_category()) { ?> 
-      <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet ">
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/information.css">
-        <?php }?>
   
     <?php wp_head(); ?>
 </head>

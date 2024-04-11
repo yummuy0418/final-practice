@@ -1,3 +1,4 @@
+(function($) {
 $(".menu-sp").click(function () {
   // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
   $("body").css({ height: "100%", overflow: "hidden" });
@@ -20,8 +21,9 @@ $(".close").click(function () {
 $('#top-page').click(function () {
   $('body,html').animate({
       scrollTop: 0//ページトップまでスクロール
-  }, 2000);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+  }, 700);//ページトップスクロールの速さ。数字が大きいほど遅くなる
    return false;//リンク自体の無効化
 });
 
+})(jQuery);
 
