@@ -72,7 +72,8 @@
       </div>
 
     </section>
-  </main>
-  <?php endwhile; ?>
+    <?php endwhile; ?>
     <?php endif; ?>
+  </main>
+  
   <?php get_footer( ); ?>

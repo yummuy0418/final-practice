@@ -28,7 +28,7 @@
         <?php while(have_posts()) : the_post(); ?>
           <a href="<?php the_permalink(); ?>" class="post-with-photo">
 
-            <img class="post-photo" src="<?php the_post_thumbnail_url('thumbnail'); ?>" />
+            <img class="post-photo" src="<?php the_post_thumbnail_url('full'); ?>" />
             <div class="post-title">
               <h2><?php the_title(); ?></h2>
               <div class="post-date">
@@ -53,7 +53,7 @@
   );
 ?>
 </div>
-
+</div>
 
     </section>
   </main>

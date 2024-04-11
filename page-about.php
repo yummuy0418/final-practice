@@ -21,7 +21,7 @@
    <!-- サイトマップ -->
    <?php get_template_part('breadcrumb'); ?>
 
-</div>
+
   <!-- コンセプト -->
   <div class="bg-person">
   <section class="concept">

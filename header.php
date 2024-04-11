@@ -61,23 +61,23 @@
 <body>
   <header>
     <div class="logo">
-      <a href="<?php echo home_url(); ?>">
+      <a href="<?php  echo esc_url(home_url());?>">
         <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo">
       </a>
     </div>
     <!-- PC用ナビゲーション -->
     <nav class="nav-pc top-nav-pc">
-      <a href="<?php echo home_url(); ?>">ホーム</a>
-      <a href="<?php echo home_url(); ?>/about">当院について</a>
-      <a href="<?php echo home_url(); ?>/course">コース・料金</a>
-      <a href="<?php echo home_url(); ?>/news">お知らせ</a>
-      <a href="<?php echo home_url(); ?>/voice">お客様の声</a>
-      <a class="reservation" href="<?php echo home_url(); ?>/contact">ご予約・お問い合わせ</a>
+      <a href="<?php  echo esc_url(home_url());?>">ホーム</a>
+      <a href="<?php  echo esc_url(home_url());?>/about">当院について</a>
+      <a href="<?php  echo esc_url(home_url());?>/course">コース・料金</a>
+      <a href="<?php  echo esc_url(home_url());?>/news">お知らせ</a>
+      <a href="<?php  echo esc_url(home_url());?>/voice">お客様の声</a>
+      <a class="reservation" href="<?php  echo esc_url(home_url());?>/contact">ご予約・お問い合わせ</a>
     </nav>
 
 
     <!-- スマホ用メニューボタン -->
-    <img class="menu-sp" src="<?php echo get_template_directory_uri(); ?>/images/button-menu.png" alt="ナビゲーションを開く">
+    <img class="menu-sp" src="<?php echo esc_url( get_template_directory_uri() . '/images/button-menu.png') ?>" alt="ナビゲーションを開く">
 
     <!-- スマホ用ナビゲーション ハンバーガー -->
     <div class="nav-sp">

@@ -230,7 +230,7 @@ header {
   font-size: 14px;
 }
 
-.breadcrumbs span:nth-child(2){
+.breadcrumbs .current-item{
   color: #0C4324;
 }
 
