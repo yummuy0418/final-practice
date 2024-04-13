@@ -34,16 +34,17 @@ function enqueue_custom_styles_and_scripts() {
         wp_enqueue_style('course-page-style', get_template_directory_uri() . '/css/course-price.css');
     } elseif (is_home()) {
         wp_enqueue_style('home-page-style', get_template_directory_uri() . '/css/information.css');
+    } elseif (is_single()) {
+        wp_enqueue_style('information-style', get_template_directory_uri() . '/css/information.css');
+        wp_enqueue_style('single-page-style', get_template_directory_uri() . '/css/information-detail.css');
+    } elseif (is_category()) {
+        wp_enqueue_style('category-page-style', get_template_directory_uri() . '/css/information.css');
     } elseif (is_archive()) {
         wp_enqueue_style('archive-page-style', get_template_directory_uri() . '/css/voice.css');
-    } elseif (is_single()) {
-        wp_enqueue_style('single-page-style', get_template_directory_uri() . '/css/information-detail.css');
     } elseif (is_page('contact')) {
         wp_enqueue_style('contact-page-style', get_template_directory_uri() . '/css/contact.css');
     } elseif (is_page('contact-thanks')) {
         wp_enqueue_style('contact-thanks-page-style', get_template_directory_uri() . '/css/contact-thanks.css');
-    } elseif (is_category()) {
-        wp_enqueue_style('category-page-style', get_template_directory_uri() . '/css/information.css');
     }
     // jQuery
     wp_enqueue_script('jquery', 'https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js', array(), null, true);

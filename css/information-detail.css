@@ -8,6 +8,7 @@
   }
 }
 
+
 .post-with-photo {
   flex-direction: column;
 }
@@ -29,6 +30,7 @@
 }
 .post-photo {
   width: 100%;
+  
 }
 
 
@@ -85,9 +87,6 @@
 @media screen and (max-width: 1024px) {
   .post-container {
     padding: 0 20px;
-  }
-  .post-left {
-    width: 100%;
   }
 }
 
