@@ -36,7 +36,7 @@
   </div>
 
 
-  <section class="news">
+  <section class="news fade-in">
     <div class="news-main">
       <div class="news-subject">
         <p>News</p>
@@ -68,7 +68,7 @@
 
 
   <div class="bg-person">
-    <section class="concept">
+    <section class="concept fade-in">
       <div class="concept-flex">
         <div class="concept-left">
           <div class="common-icon-title">
@@ -95,7 +95,7 @@
 
 
   <div class="bg-person2">
-    <section class="course-price">
+    <section class="course-price fade-in">
       <div class="course-frame">
         <img src="<?php echo esc_url( get_template_directory_uri() . '/images/footer-frame.png'); ?>">
       </div>
@@ -142,7 +142,7 @@
     </section>
   </div>
 
-  <section class="voice">
+  <section class="voice fade-in">
     <div class="voice-head">
       <img class="voice-img-pc" src="<?php echo esc_url( get_template_directory_uri() . '/images/voice-img.png'); ?>">
       <img class="voice-img-sp" src="<?php echo esc_url( get_template_directory_uri() . '/images/voice-sp-img.png'); ?>">

@@ -47,7 +47,7 @@ function enqueue_custom_styles_and_scripts() {
         wp_enqueue_style('contact-thanks-page-style', get_template_directory_uri() . '/css/contact-thanks.css');
     }
     // jQuery
-    wp_enqueue_script('jquery', 'https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js', array(), null, true);
+    // wp_enqueue_script('jquery', 'https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js', array(), null, true);
 
     // Slick Carousel
     wp_enqueue_script('slick-carousel', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), null, true);
@@ -56,5 +56,6 @@ function enqueue_custom_styles_and_scripts() {
     wp_enqueue_script('main-js', get_template_directory_uri() . '/main.js', array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_styles_and_scripts');
-?>
+
+
 

@@ -19,7 +19,7 @@
     <!-- サイトマップ -->
     <?php echo esc_html ( get_template_part('breadcrumb')); ?>
     <!-- コース・料金 -->
-    <section class="course-price">
+    <section class="course-price fade-in">
       <div class="course-frame">
         <img src="<?php echo esc_url( get_template_directory_uri() .'/images/footer-frame.png'); ?>">
       </div>
@@ -61,7 +61,7 @@
     </section>
     
     <!-- 保険診療 -->
-    <section class="insurance-selfpay">
+    <section class="insurance-selfpay fade-in">
       <div class="insurance-selfpay-left">
         <div class="common-icon-title">
           <img src="<?php echo esc_url( get_template_directory_uri() .'/images/before-title-icon.png'); ?>">
@@ -83,7 +83,7 @@
     </section>
 
     <!-- 自費診療 -->
-    <section class="insurance-selfpay">
+    <section class="insurance-selfpay fade-in">
       <div class="insurance-selfpay-left">
         <div class="common-icon-title">
           <img src="<?php echo esc_url( get_template_directory_uri() .'/images/before-title-icon.png'); ?>">

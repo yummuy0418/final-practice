@@ -24,7 +24,7 @@
 
   <!-- コンセプト -->
   <div class="bg-person">
-  <section class="concept">
+  <section class="concept fade-in">
     <div class="concept-flex">
       <div class="concept-left">
         <div class="common-icon-title">
@@ -50,7 +50,7 @@
 
   <!-- フロー -->
   <div class="bg-person3">
-  <section class="flow">
+  <section class="flow fade-in">
     <div class="flow-flex">
       <div class="flow-left">
         <div class="common-icon-title">
@@ -79,7 +79,7 @@
   </section>
 </div>
 
-  <section class="point">
+  <section class="point fade-in">
     <div class="common-title point-title">
       <div class="common-title-main">
         <img class="title-side-left" src="<?php echo esc_url( get_template_directory_uri() .'/images/title-side.png'); ?>">

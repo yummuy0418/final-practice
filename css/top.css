@@ -213,9 +213,60 @@ ul {
     position: absolute;
     top: -5%;
     left: 7%;
-    z-index: -1;
-    overflow: hidden;
-  }
+    z-index: 0;	z-index: -1;
+overflow: hidden;	
+}	
+}	
+/* ドットインジケーター */	
+.dots-class button {	
+display: none;	
+appearance: none;	
+outline: none;	
+padding: 0;	
+border: none;	
+background-color: #ffffff;	
+}	
+/* ドットを囲む親要素 */	
+.dots-class {	
+position: absolute;	
+bottom: 30px;	
+right: 30px;	
+border-radius:20%;	
+display: flex;	
+justify-content: right;	
+padding: 0px;	
+margin-top: 0px;	
+width: 80px;	
+background-color: #ffffff;	
+z-index: 100;	
+}	
+/* それぞれのドット */	
+.dots-class li {	
+width: 20px;	
+height: 5px;	
+background-color: #fff;	
+border-radius: 20px;	
+z-index: 1;	
+}	
+/* 今表示してるスライドのドット */	
+.dots-class li.slick-active {	
+position: absolute;	
+left: 0;	
+background-color: #468459;	
+z-index:10;	
+}	
+.dots-class li.slick-active:nth-child(1) {	
+width: 20px;	overflow: hidden;
+}	
+.dots-class li.slick-active:nth-child(2) {	
+width: 40px;	
+}	
+.dots-class li.slick-active:nth-child(3) {	
+width: 60px;	
+}
+
+.dots-class li.slick-active:nth-child(4) {	
+width: 80px;
 }
 
 /* お知らせ */
@@ -281,6 +332,7 @@ ul {
 .news a {
   margin-left: auto;
   font-size: 14px;
+  color: #000000;
 }
 
 .news a:hover,
