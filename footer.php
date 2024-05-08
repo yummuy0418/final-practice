@@ -88,7 +88,8 @@
   jQuery(document).ready(function($) {
   $('.slider').slick({
     autoplay: true,
-    dots: false,
+    dots: true,
+    dotsClass: "dots-class" ,
     fade: true,
     speed: 1000,
     arrows: false,

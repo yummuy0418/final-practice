@@ -225,7 +225,6 @@ ul {
   align-items: center;
   justify-content: space-between;
   font-size: 18px;
-
   width: min(100%, 1200px);
   padding: 7px 20px;
 }
